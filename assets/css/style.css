@@ -1,0 +1,108 @@
+*,
+body,
+html {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container {
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header {
+    background-color: #000;
+}
+.display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content {
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    border: none;
+    background-color: transparent;
+}
+button {
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    z-index: 2;
+}
+
+.nav-content {
+    position: relative;
+}
+
+.nav-item {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    padding: 11px 0;
+    border-bottom: 1px solid #575757;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    font-style: italic;
+    background: linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-item .menu-thumb {
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.nav-item .menu-thumb div {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: none;
+    max-width: 300px;
+    position: absolute;
+    bottom: -19px;
+    margin-top: 200px;
+    left: -28px;
+    z-index: 3;
+}
+.nav-item .menu-thumb img {
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
