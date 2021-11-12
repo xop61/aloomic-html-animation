@@ -21,4 +21,17 @@ $(function () {
         $(".our-clients-pre").css("margin-bottom", 100)
         $("#clients-explain").css("height", 0)
     })
+
+    // console slide
+    cardSlideCount = 0;
+    deviceWidth = $("#device-ruler").width()
+    cardsCunt = $('.slide-item').length % 2
+    $("#right-arrow").click(function () {
+        cardSlideCount--
+        $(".slide-cards").css({ "transform": "translateX(" + deviceWidth * cardSlideCount + "px)" })
+    })
+    $("#left-arrow").click(function () {
+        cardSlideCount++
+        $(".slide-cards").css({ "transform": "translateX(" + deviceWidth * cardSlideCount + "px)" })
+    })
 });
