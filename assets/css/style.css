@@ -293,6 +293,82 @@ button {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.78) 100%);
     z-index: 2;
 }
+
+/* Our clietns */
+.our-client-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+.our-client-title img {
+    transform: rotate(58deg);
+}
+.our-client-title h2 {
+    font-family: "Epilogue", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 47px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-transform: uppercase;
+}
+.our-client-title h2 span {
+    font-family: "Playfair Display", sans-serif;
+    filter: invert(1);
+}
+.our-client-title p {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    max-width: 480px;
+    color: #000000;
+    margin-top: 15px;
+}
+.our-clients {
+    text-align: center;
+    margin-top: 100px;
+}
+.client-explain {
+    border: none;
+    background: transparent;
+    font-family: "Epilogue", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #518f5a;
+}
+.our-clients img {
+    width: 25%;
+    height: 53px;
+    object-fit: none;
+    margin-bottom: 50px;
+}
+.our-clients-pre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#clients-explain {
+    height: 0;
+    margin-top: 0;
+}
+
+.client-explain:last-child {
+    margin-bottom: 100px;
+}
 /* Remaining CSS3 Animation */
 
 @media (max-width: 1024px) {
