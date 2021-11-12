@@ -13,6 +13,11 @@ html {
 }
 header {
     background-color: #000;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
 }
 .display-center {
     display: flex;
@@ -114,6 +119,182 @@ button {
 .menu-open {
     transform: translateY(0);
 }
+
+.home-banner {
+    background-color: #000;
+    padding-top: 300px;
+}
+.text-1 {
+    font-family: "Epilogue", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 94px;
+    line-height: 96px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    position: relative;
+    margin-left: 66px;
+    margin-top: 52px;
+}
+
+.text-1 span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -66px;
+    margin-top: -52px;
+}
+
+.text-1-italic {
+    font-family: "Playfair Display", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 94px;
+    line-height: 125px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 66px;
+    background: linear-gradient(90.25deg, #fff 0%, #000 99.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circle-mark {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 44px;
+}
+
+.showreel-section {
+    background-color: #000;
+    padding-top: 210px;
+}
+
+.showreel-text {
+    margin-left: 11px;
+    padding-left: 45px;
+}
+
+.showreel-text span img {
+    width: 54px;
+    height: 71px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -45px;
+    left: 0;
+    top: 0;
+}
+
+.text-2 {
+    font-family: "Epilogue", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 47px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.text-gradient {
+    font-family: "Playfair Display", sans-serif;
+    background: linear-gradient(90.25deg, #fff 0%, #000 99.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.visible-video {
+    position: relative;
+    margin-top: 90px;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: transparent;
+}
+.visible-video video {
+    width: 100%;
+    min-height: 457px;
+    object-fit: cover;
+}
+
+/* video cards */
+.video-cards-section {
+    background: #000;
+    padding-top: 260px;
+}
+.video-cards {
+    display: flex;
+}
+
+.video-cards .cards-box {
+    width: calc(50% - 24px);
+    position: relative;
+}
+.video-cards .cards-box:first-child {
+    margin-right: 24px;
+}
+.video-cards .cards-box:last-child {
+    margin-left: 24px;
+    margin-top: 48px;
+}
+.video-cards .cards-box .video-card {
+    position: relative;
+}
+.video-cards .cards-box .video-card:first-child {
+    margin-bottom: 24px;
+}
+.video-cards .cards-box .video-card:last-child {
+    padding-top: 24px;
+}
+.video-cards .cards-box .video-card img {
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    height: 380px;
+}
+.video-card-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 30px;
+    margin-bottom: 23px;
+    z-index: 3;
+}
+.video-card-text p {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: #fcfcfc96;
+}
+
+.video-card-text h3 {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    color: #fcfcfc;
+}
+.card-gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.78) 100%);
+    z-index: 2;
+}
+/* Remaining CSS3 Animation */
+
 @media (max-width: 1024px) {
     .container {
         max-width: 100%;
