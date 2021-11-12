@@ -25,13 +25,25 @@ $(function () {
     // console slide
     cardSlideCount = 0;
     deviceWidth = $("#device-ruler").width()
-    cardsCunt = $('.slide-item').length % 2
+    cardsCunt = parseInt($('.slide-item').length / 2)
     $("#right-arrow").click(function () {
-        cardSlideCount--
-        $(".slide-cards").css({ "transform": "translateX(" + deviceWidth * cardSlideCount + "px)" })
+        if (cardSlideCount > 0 - cardsCunt) {
+            cardSlideCount--
+            $(".slide-cards").css({ "transform": "translateX(" + deviceWidth * cardSlideCount + "px)" })
+            $("#left-arrow").css("opacity", 1)
+        } else {
+            $("#right-arrow").css("opacity", 0.4)
+            $("#left-arrow").css("opacity", 1)
+        }
     })
     $("#left-arrow").click(function () {
-        cardSlideCount++
-        $(".slide-cards").css({ "transform": "translateX(" + deviceWidth * cardSlideCount + "px)" })
+        if (cardSlideCount < 0) {
+            cardSlideCount++
+            $(".slide-cards").css({ "transform": "translateX(" + deviceWidth * cardSlideCount + "px)" })
+            $("#right-arrow").css("opacity", 1)
+        } else {
+            $("#right-arrow").css("opacity", 1)
+            $("#left-arrow").css("opacity", 0.4)
+        }
     })
 });

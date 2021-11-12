@@ -469,13 +469,83 @@ header {
 
 .slide-cards-control button:last-child {
   margin-top: 18px;
+  opacity: 0.4;
 }
 .slide-cards-control button:last-child img {
   transform: rotate(180deg);
-  opacity: 0.4;
 }
-/* Remaining CSS3 Animation */
 
+.we-love {
+  background: #000;
+  padding-top: 270px;
+}
+
+.we-love .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.border-word {
+  margin-bottom: 20px;
+}
+.border-word h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 83px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff30;
+  padding-bottom: 20px;
+}
+
+.border-word p {
+  font-family: "Epilogue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #ffffff;
+  max-width: 260px;
+  border-bottom: 1px solid #ffffff30;
+  padding-bottom: 32px;
+  padding-left: 93px;
+}
+
+.tip-photo img {
+  object-fit: cover;
+}
+.tip-photo1 {
+  margin-left: 54px;
+  margin-right: 34px;
+}
+.tip-photo1 img {
+  width: 138px;
+  height: 169px;
+}
+.tip-photo2 {
+  margin-right: 75px;
+}
+.border-word .star-mark {
+  color: #ffffff30;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.tip-photo2 img {
+  width: 160px;
+  height: 182px;
+}
+.tip-photo3 {
+  margin-left: 52px;
+}
+.tip-photo3 img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.border-word-e h2 {
+  padding-left: 174px;
+  padding-right: 30px;
+}
 @media (max-width: 1024px) {
   .container {
     max-width: 100%;
