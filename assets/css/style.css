@@ -43,7 +43,8 @@ header {
     position: relative;
 }
 
-.nav-item {
+.nav-item, .nav-item>span a {
+    text-decoration: none;
     font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -168,7 +169,7 @@ header {
     width: 54px;
     height: 71px;
     position: absolute;
-    margin-top: -50px;
+    margin-top: -44px;
     margin-left: -45px;
     left: 0;
     top: 0;
@@ -212,7 +213,6 @@ header {
     min-height: 457px;
     object-fit: cover;
 }
-
 
 /* video cards */
 
@@ -297,7 +297,6 @@ header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.78) 100%);
     z-index: 2;
 }
-
 
 /* Our clietns */
 
@@ -384,6 +383,9 @@ header {
     margin-bottom: 100px;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
 
 /* What we do */
 
@@ -391,7 +393,6 @@ header {
     background: #000;
     padding-top: 190px;
 }
-
 
 /* Custom slide */
 
@@ -604,7 +605,9 @@ header {
     padding-top: 50px;
     background-image: url("../img/spring.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
+    height: 611px;
+    padding-bottom: 329px;
 }
 
 .clients-review .container {
@@ -697,8 +700,7 @@ header {
     max-width: 1040px;
 }
 
-button.control_prev,
-button.control_next {
+button.control_prev, button.control_next {
     position: absolute;
     top: 20%;
     z-index: 9;
@@ -707,8 +709,7 @@ button.control_next {
     background: transparent;
 }
 
-button.control_prev:hover,
-button.control_next:hover {
+button.control_prev:hover, button.control_next:hover {
     opacity: 1;
     -webkit-transition: all 0.2s ease;
 }
@@ -731,6 +732,58 @@ button.control_next {
 
 .check-bolg-section {
     background: #000;
+}
+
+.check-bolg-section .section-title svg {
+    float: right;
+    margin-top: 20px;
+}
+
+.check-bolg-section h2:nth-child(2) {
+    display: inline-block;
+}
+
+.check-bolg-section .section-img-slide {
+    margin-top: 95px;
+    padding-bottom: 269px;
+    display: flex;
+}
+
+.check-bolg-section .section-img-slide .slide-img {
+    width: 520px;
+    margin: auto 28px;
+    position: relative;
+}
+
+.spin-link {
+    width: 117px;
+    height: 117px;
+    border-radius: 58px;
+    position: absolute;
+    border: 1px solid #fff;
+    line-height: 117px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.check-bolg-section .section-img-slide .slide-img:nth-child(2) .spin-link {
+    right: 76px;
+    bottom: 70px;
+}
+
+.check-bolg-section .section-img-slide .slide-img:nth-child(3) .spin-link {
+    left: 50px;
+    top: 50px;
+}
+
+.check-bolg-section .section-img-slide .slide-img:first-child {
+    margin-left: -145px;
 }
 
 body {
@@ -952,4 +1005,258 @@ body #mixedSlider .MS-controls .MS-right {
         margin-right: 15px;
         margin-left: 15px;
     }
+}
+
+.input-panel {
+    background-color: #000;
+    padding-bottom: 290px;
+}
+
+.input-panel h1 {
+    color: #fff;
+}
+
+.input-panel h1:first-child span img {
+    width: 54px;
+    height: 71px;
+    position: absolute;
+    margin-top: -44px;
+    margin-left: -45px;
+    left: 0;
+    top: 0;
+}
+
+.input-panel .input-section {
+    position: relative;
+}
+
+.input-panel .input-section span img {
+    width: 39px;
+    height: 29.91px;
+    right: 0px;
+    bottom: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.input-panel h1 {
+    position: relative;
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 93px;
+    line-height: 73px;
+    /* line-height: 47px; */
+    /* identical to box height, or 51% */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    padding-bottom: 42px;
+}
+
+.input-panel h1:nth-child(2) {
+    font-family: 'Playfair Display';
+}
+
+.input-panel .container>* {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.input-panel .container input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.57);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 82px;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 32px;
+    outline: none;
+    width: 100%;
+    position: relative;
+}
+
+.input-panel .container input::placeholder {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 32px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: transparent;
+    /* border: 0.5px solid rgba(255, 255, 255, 0.62); */
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.62);
+}
+
+.input-panel .container input:focus-visible {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.57);
+}
+
+.floating-panel {
+    background: #000;
+}
+
+.floating-panel marquee span:first-child {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 75px;
+    line-height: 77px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(252, 252, 252, 0.38);
+    margin-top: 5px;
+    top: 20px;
+}
+
+.floating-panel marquee span:nth-child(3) {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 75px;
+    line-height: 120px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(252, 252, 252, 0.38);
+    position: absolute;
+    top: -36px;
+}
+
+.floating-panel marquee .spot {
+    display: inline-block;
+    background: #518F5A;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 8px;
+    margin: 17px 31px;
+}
+
+.footer {
+    background: #000000;
+    color: #fff;
+    padding: 75px 20px 96px;
+}
+
+.footer .footer-section1 {
+    display: flex;
+    width: 100%;
+}
+
+.footer .footer-section1>div {
+    width: 18%;
+    margin-left: 86px;
+}
+
+.footer .footer-section1>div:last-child {
+    margin-left: 60px;
+    margin-right: 70px;
+    width: 26%;
+}
+
+.footer .footer-section1 a {
+    display: block;
+    text-decoration: none;
+    color: #FCFCFC;
+    margin-bottom: 17px;
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+}
+
+.footer .footer-section1 div a:first-child {
+    color: rgba(252, 252, 252, 0.33);
+}
+
+.footer .footer-section1 .email-input-wrapper p {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: #FCFCFC;
+    margin-bottom: 17px;
+}
+
+.footer .footer-section1 .email-input-wrapper .input-section {
+    position: relative;
+}
+
+.email-input-wrapper .input-section img {
+    position: absolute;
+    width: 22px;
+    height: 16.87px;
+    bottom: 13px;
+    right: 0px;
+}
+
+.footer .footer-section1 input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.57);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 42px;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 32px;
+    outline: none;
+    width: 100%;
+}
+
+.footer .footer-section1 input::placeholder {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.36);
+}
+
+.footer .footer-section2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 100px 30px;
+}
+
+.footer .footer-section2 .section1 span {
+    margin-right: 34px;
+}
+
+.footer .footer-section2 .section2 span {
+    margin-right: 39px;
+}
+
+.footer .footer-section2 .section3 span {
+    color: rgba(252, 252, 252, 0.48);
+}
+
+.footer .footer-section2 span, .footer .footer-section2 span a {
+    text-decoration: none;
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    color: #FCFCFC;
 }
