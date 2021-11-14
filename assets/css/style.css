@@ -1154,8 +1154,8 @@ body #mixedSlider .MS-controls .MS-right {
 }
 
 .footer .footer-section1>div {
-    width: 18%;
-    margin-left: 86px;
+    width: 15%;
+    margin-left: 35px;
 }
 
 .footer .footer-section1>div:last-child {
@@ -1259,4 +1259,9 @@ body #mixedSlider .MS-controls .MS-right {
     line-height: 15px;
     letter-spacing: -0.02em;
     color: #FCFCFC;
+}
+
+footer {
+    width: 100%;
+    background: #000;
 }
