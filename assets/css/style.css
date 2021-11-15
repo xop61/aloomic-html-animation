@@ -43,7 +43,17 @@ header {
     position: relative;
 }
 
-.nav-item, .nav-item>span a {
+.nav-item {
+    padding: 11px 0;
+    border-bottom: 1px solid #575757;
+    cursor: pointer;
+    color: #fcfcfc;
+}
+
+.nav-item>a {
+    display: block;
+    padding: 0px;
+    border: none;
     text-decoration: none;
     font-family: "Playfair Display", sans-serif;
     font-style: normal;
@@ -53,13 +63,10 @@ header {
     letter-spacing: -0.02em;
     color: #fcfcfc;
     text-transform: uppercase;
-    padding: 11px 0;
-    border-bottom: 1px solid #575757;
-    cursor: pointer;
 }
 
-.nav-item:hover {
-    font-style: italic;
+.nav-item:hover, .nav-item>a:hover {
+    font-style: italic !important;
     background: linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -383,10 +390,6 @@ header {
     margin-bottom: 100px;
 }
 
-.overflow-hidden {
-    overflow: hidden;
-}
-
 /* What we do */
 
 .what-we-do {
@@ -439,6 +442,10 @@ header {
     left: 0;
     top: 0;
     background: #00000087;
+}
+
+.slide-item-mask:hover {
+    opacity: 0.5;
 }
 
 .slide-item-content {
@@ -734,6 +741,14 @@ button.control_next {
     background: #000;
 }
 
+.check-bolg-section .section-title {
+    padding-top: 50px;
+}
+
+.check-bolg-section .container {
+    overflow: hidden;
+}
+
 .check-bolg-section .section-title svg {
     float: right;
     margin-top: 20px;
@@ -743,13 +758,13 @@ button.control_next {
     display: inline-block;
 }
 
-.check-bolg-section .section-img-slide {
+#slides1 {
     margin-top: 95px;
-    padding-bottom: 269px;
+    padding-bottom: 150px;
     display: flex;
 }
 
-.check-bolg-section .section-img-slide .slide-img {
+#slides1 .slide-img {
     width: 520px;
     margin: auto 28px;
     position: relative;
@@ -772,17 +787,17 @@ button.control_next {
     text-decoration: none;
 }
 
-.check-bolg-section .section-img-slide .slide-img:nth-child(2) .spin-link {
+#slides1 .slide-img:nth-child(2) .spin-link {
     right: 76px;
     bottom: 70px;
 }
 
-.check-bolg-section .section-img-slide .slide-img:nth-child(3) .spin-link {
+#slides1 .slide-img:nth-child(3) .spin-link {
     left: 50px;
     top: 50px;
 }
 
-.check-bolg-section .section-img-slide .slide-img:first-child {
+#slides1 .slide-img:first-child {
     margin-left: -145px;
 }
 
@@ -999,21 +1014,9 @@ body #mixedSlider .MS-controls .MS-right {
     border: 1px solid grey;
 }
 
-@media (max-width: 1024px) {
-    .container {
-        max-width: 100%;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-}
-
 .input-panel {
     background-color: #000;
-    padding-bottom: 290px;
-}
-
-.input-panel h1 {
-    color: #fff;
+    padding-bottom: 190px;
 }
 
 .input-panel h1:first-child span img {
@@ -1079,6 +1082,7 @@ body #mixedSlider .MS-controls .MS-right {
     outline: none;
     width: 100%;
     position: relative;
+    letter-spacing: 0.02em;
 }
 
 .input-panel .container input::placeholder {
@@ -1087,8 +1091,8 @@ body #mixedSlider .MS-controls .MS-right {
     font-weight: bold;
     font-size: 31px;
     line-height: 32px;
-    /* identical to box height */
     letter-spacing: -0.02em;
+    /* identical to box height */
     text-transform: uppercase;
     color: transparent;
     /* border: 0.5px solid rgba(255, 255, 255, 0.62); */
@@ -1145,7 +1149,7 @@ body #mixedSlider .MS-controls .MS-right {
 .footer {
     background: #000000;
     color: #fff;
-    padding: 75px 20px 96px;
+    padding: 75px 20px 0px;
 }
 
 .footer .footer-section1 {
@@ -1238,12 +1242,8 @@ body #mixedSlider .MS-controls .MS-right {
     padding: 80px 100px 30px;
 }
 
-.footer .footer-section2 .section1 span {
-    margin-right: 34px;
-}
-
-.footer .footer-section2 .section2 span {
-    margin-right: 39px;
+.footer .footer-section2 span {
+    margin-right: 35px;
 }
 
 .footer .footer-section2 .section3 span {
@@ -1264,4 +1264,260 @@ body #mixedSlider .MS-controls .MS-right {
 footer {
     width: 100%;
     background: #000;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+@media (max-width: 1080px) {
+    .nav-item>a {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .container {
+        max-width: 100% !important;
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    }
+    .text-1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .text-1-italic {
+        font-size: 46px;
+        line-height: 75px;
+    }
+    .text-1 span {
+        left: 32px;
+        top: 35px;
+    }
+    .text-1 span img {
+        width: 40px;
+    }
+    .slide-item {
+        width: 300px;
+        height: 383px;
+    }
+    .slide-item img {
+        width: 300px;
+    }
+    .slide-item-content {
+        margin-top: 150px;
+        margin-left: 60px;
+    }
+    .slide-item-content h2 {
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .slide-cards-control {
+        margin-left: 445px;
+    }
+    .we-love .container {
+        margin: 0 auto !important;
+        width: 450px;
+    }
+    .we-love .container h2, .we-love .container p {
+        padding-top: 20px;
+    }
+    .we-love .container h2 {
+        font-size: 32px;
+    }
+    .we-love .container p {
+        padding-right: 80px;
+    }
+    .border-word-e h2 {
+        padding-left: 102px;
+        padding-right: 102px;
+    }
+    .input-panel h1 {
+        font-size: 50px;
+        padding: 0px;
+    }
+    .input-panel h1:first-child span img {
+        margin-top: -20px;
+        margin-left: -42px;
+    }
+    .floating-panel marquee span {
+        font-size: 50px !important;
+    }
+    .footer .footer-section1 {
+        /* align-items: flex-start;
+        display: flex;*/
+        flex-flow: row wrap;
+        /* flex: 0 0 100%; */
+        display: flex;
+    }
+    .footer .footer-section1>div {
+        width: 95% !important;
+        margin: 0px 0px 16px !important;
+        border-bottom: 1px solid #2b3340;
+        padding: 0px 16px 16px;
+    }
+    .footer .footer-section1 .icon-wrapper img {
+        height: 50px;
+    }
+    .footer .footer-section2 {
+        flex-direction: column;
+        padding: 16px 16px 16px;
+    }
+    .footer .footer-section2>div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .footer-section2>div {
+        margin-bottom: 16px;
+    }
+    .footer .footer-section2 span {
+        margin-right: 0px;
+    }
+    .footer .footer-section2>.section1, .footer .footer-section2>.section2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer .footer-section2>div.section3 {
+        margin: auto;
+    }
+    .clients-review p {
+        font-size: 30px;
+    }
+    .showreel-section .section-title span img {
+        width: 40px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    .nav-menu .nav-content .menu-thumb {
+        display: none;
+    }
+    .text-1 {
+        font-size: 32px;
+        line-height: 50px;
+        margin-left: 30px;
+    }
+    .text-1-italic {
+        font-size: 30px;
+        line-height: 50px;
+        margin-left: 0px;
+    }
+    .text-2 {
+        font-size: 32px;
+    }
+    .video-cards {
+        flex-direction: column;
+    }
+    .video-cards .cards-box {
+        width: calc(100% - 24px);
+    }
+    .video-cards .cards-box:last-child {
+        margin-left: 0px;
+    }
+    .our-client-title img {
+        width: 40px;
+    }
+    .our-client-title h2 {
+        font-size: 40px;
+    }
+    .our-clients-pre {
+        flex-direction: column;
+    }
+    .our-clients img {
+        width: 100%;
+    }
+    .slide-cards-control {
+        margin-left: auto;
+        margin-top: 0px;
+        right: 30px;
+        width: 50px;
+    }
+    .slide-item-content {
+        margin-left: 45px;
+    }
+    .slide-item-content h2 {
+        font-size: 40px;
+    }
+    .we-love {
+        padding-top: 70px;
+    }
+    .clients-review {
+        background-size: contain;
+        padding-bottom: 0;
+        background-position: center center;
+    }
+    .clients-review h2 {
+        font-size: 45px;
+    }
+    .clients-review p {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .clients-review p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 460px) {
+    .we-love .container {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        max-width: calc(100% - 30px) !important;
+        display: block;
+        text-align: center;
+    }
+    .we-love .container>div {
+        padding: auto !important;
+    }
+    .tip-photo2 {
+        margin-right: 0;
+    }
+    .tip-photo3 {
+        margin-left: 0;
+    }
+    .border-word-e h2 {
+        padding: 20px;
+    }
+    .clients-review p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .clients-review h2 {
+        font-size: 32px;
+    }
+    .footer .footer-section2>.section1, .footer .footer-section2>.section2 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .footer-section2 span {
+        margin-bottom: 20px;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+    .floating-panel marquee span {
+        font-size: 32px !important;
+    }
+    .border-word h2 {
+        line-height: 20px;
+    }
+    .input-panel h1 {
+        font-size: 35px;
+    }
+}
+
+/* following slide class are from the library */
+
+#slides {
+    white-space: nowrap;
+    transform: translateX(0);
+}
+
+.slide {
+    display: inline-block;
+}
+
+.animate {
+    transition: all .5s ease-out;
 }
