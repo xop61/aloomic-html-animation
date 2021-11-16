@@ -750,6 +750,10 @@ button.control_next {
     overflow: hidden;
 }
 
+.float-r {
+    float: right;
+}
+
 .check-bolg-section .section-title svg {
     float: right;
     margin-top: 20px;
