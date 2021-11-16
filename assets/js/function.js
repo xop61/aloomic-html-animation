@@ -158,10 +158,9 @@ $(function () {
             sliding = 0;
             // Calculate which slide need to be in view.
             currentSlide = pixelOffset < startPixelOffset ? currentSlide + 1 : currentSlide - 1;
-            console.log("currentSlide1:" + currentSlide);
             // Make sure that unexisting slides weren't selected.
             currentSlide = Math.min(Math.max(currentSlide, 0), slideCount - 1);
-            console.log("currentSlide2:" + currentSlide);
+
             // Since in this example slide is full viewport width offset can be calculated according to it.
             pixelOffset = currentSlide * -430;
 
@@ -174,6 +173,14 @@ $(function () {
         }
     }
 
+    $('#we-do-menu').on('click', function () {
+        $('#main-menu').addClass('hidden');
+        $('#we-do-submenu').addClass('hidden').removeClass('hidden');
+    });
+    $('#back-to-mainmenu').on('click', function () {
+        $('#main-menu').addClass('hidden').removeClass('hidden');
+        $('#we-do-submenu').addClass('hidden');
+    });
 });
 
 

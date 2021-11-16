@@ -405,6 +405,7 @@ header {
 
 .slide-1 {
     position: relative;
+    overflow: hidden;
 }
 
 .slide-cards {
@@ -1185,6 +1186,10 @@ body #mixedSlider .MS-controls .MS-right {
     color: rgba(252, 252, 252, 0.33);
 }
 
+.footer .footer-section1 div a:first-child:hover {
+    text-decoration: none;
+}
+
 .footer .footer-section1 .email-input-wrapper p {
     font-family: Epilogue;
     font-style: normal;
@@ -1271,6 +1276,78 @@ footer {
     color: #f0f0f0;
 }
 
+/* following slide class are from the library */
+
+#slides {
+    white-space: nowrap;
+    transform: translateX(0);
+}
+
+.slide {
+    display: inline-block;
+}
+
+.animate {
+    transition: all .5s ease-out;
+}
+
+.contact-panel {
+    padding: 200px 0;
+    background-color: black;
+}
+
+.contact-panel-content {
+    position: relative;
+    background: black;
+    background: url(../img/map.jpg);
+    background-position-x: right;
+    background-size: cover;
+}
+
+.map-wrapper {
+    z-index: -2;
+    width: 100%;
+}
+
+.map-wrapper img {
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info-wrapper {
+    /* margin-bottom: -50%; */
+    /* margin-top: calc(-50% + 190px); */
+    padding: 200px 0;
+    left: 120px;
+    color: white;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 46px;
+}
+
+.contact-item span {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #FCFCFC;
+    margin-bottom: 14px;
+}
+
+.contact-item span:first-child {
+    font-family: "Epilogue";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
 @media (max-width: 1080px) {
     .nav-item>a {
         font-size: 32px;
@@ -1350,10 +1427,17 @@ footer {
         display: flex;
     }
     .footer .footer-section1>div {
+        width: calc(33.33% - 35px);
+        padding: 0px 16px 16px;
+        margin: 0 auto auto;
+        text-align: center;
+    }
+    .footer .footer-section1>div:last-child, .footer .footer-section1>div:first-child {
         width: 95% !important;
         margin: 0px 0px 16px !important;
         border-bottom: 1px solid #2b3340;
         padding: 0px 16px 16px;
+        text-align: left;
     }
     .footer .footer-section1 .icon-wrapper img {
         height: 50px;
@@ -1386,6 +1470,9 @@ footer {
         width: 40px;
         top: 10px;
         left: 10px;
+    }
+    .input-panel {
+        padding-bottom: 90px;
     }
 }
 
@@ -1457,6 +1544,17 @@ footer {
     .clients-review p {
         font-size: 24px;
     }
+    .input-panel h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .footer .footer-section1>div {
+        width: 95% !important;
+        margin: 0 0 16px;
+        border-bottom: 1px solid #2b3340;
+        padding: 0px 16px 16px;
+        text-align: left;
+    }
 }
 
 @media (max-width: 460px) {
@@ -1505,19 +1603,4 @@ footer {
     .input-panel h1 {
         font-size: 35px;
     }
-}
-
-/* following slide class are from the library */
-
-#slides {
-    white-space: nowrap;
-    transform: translateX(0);
-}
-
-.slide {
-    display: inline-block;
-}
-
-.animate {
-    transition: all .5s ease-out;
 }
