@@ -1302,6 +1302,7 @@ footer {
     background: url(../img/map.jpg);
     background-position-x: right;
     background-size: cover;
+    max-height: 730px;
 }
 
 .map-wrapper {
@@ -1318,12 +1319,11 @@ footer {
 .contact-info-wrapper {
     /* margin-bottom: -50%; */
     /* margin-top: calc(-50% + 190px); */
-    padding: 200px 0;
-    left: 120px;
+    padding: 245px 120px 320px;
     color: white;
 }
 
-.contact-item {
+.contact-info-wrapper .contact-item {
     display: flex;
     flex-direction: column;
     margin-bottom: 46px;
@@ -1554,6 +1554,15 @@ footer {
         border-bottom: 1px solid #2b3340;
         padding: 0px 16px 16px;
         text-align: left;
+    }
+    .contact-info-wrapper {
+        padding-left: 20px;
+    }
+    .contact-panel-content {
+        background-position-x: 630px;
+    }
+    #we-do-submenu .nav-item a span:nth-child(2) {
+        display: none;
     }
 }
 
