@@ -272,7 +272,7 @@ header {
     bottom: 0;
     margin-left: 30px;
     margin-bottom: 23px;
-    z-index: 3;
+    z-index: 2;
 }
 
 .video-card-text p {
