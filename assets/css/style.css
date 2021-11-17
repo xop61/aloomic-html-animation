@@ -1130,7 +1130,8 @@ body #mixedSlider .MS-controls .MS-right {
 .footer {
     background: #000000;
     color: #fff;
-    padding: 75px 20px 0px;
+    /* padding: 75px 20px 0px; */
+    padding-top: 75px;
 }
 
 .footer .footer-section1 {
@@ -1620,7 +1621,7 @@ ul.bestwork-slides li img:nth-child(2) {
     letter-spacing: -0.02em;
     margin-left: 66px;
     padding-top: 24px;
-    padding-bottom: 340px;
+    /* padding-bottom: 340px; */
 }
 
 .what-we-do-detail-panel {
@@ -2416,7 +2417,7 @@ ul.bestwork-slides li img:nth-child(2) {
         width: calc(100% - 40px) !important;
     }
     .what-we-do-subdescription {
-        padding-bottom: 150px;
+        /* padding-bottom: 150px; */
     }
     /* for projects page */
     .project-item .project-subdetail>p {
@@ -2503,7 +2504,7 @@ ul.bestwork-slides li img:nth-child(2) {
         flex-direction: column-reverse;
     }
     .what-we-do-subdescription {
-        padding-bottom: 150px;
+        /* padding-bottom: 150px; */
     }
     /* For about page */
     .create-title>p {
