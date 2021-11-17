@@ -1224,7 +1224,7 @@ body #mixedSlider .MS-controls .MS-right {
 .footer .footer-section2 {
     display: flex;
     justify-content: space-between;
-    padding: 80px 100px 30px;
+    padding: 80px 40px 30px;
 }
 
 .footer .footer-section2 span {
