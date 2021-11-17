@@ -1352,6 +1352,412 @@ footer {
     text-transform: uppercase;
 }
 
+/* ///////--------------------------------------------------- */
+
+.company-detail {
+    margin-top: 165px;
+    display: flex;
+}
+
+.company-detail .company-detail-text1 {
+    width: 57.6%;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 68px;
+    /* or 149% */
+    color: #FFFFFF;
+    padding-bottom: 111px;
+    margin-bottom: 191px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    display: inline-block;
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.company-detail .company-detail-text1 span {
+    background: -webkit-linear-gradient(0.5deg, #fff, #fff0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.company-detail .company-detail-text2 {
+    width: 42.3%;
+}
+
+.company-detail .company-detail-text2 .company-img, .company-detail .company-detail-text2 .company-img img {
+    width: 100%;
+}
+
+.company-detail .company-detail-text2 .company-detail2 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    color: #FFFFFF;
+    padding-bottom: 113px;
+    margin-left: 96px;
+    padding-bottom: 113px;
+}
+
+.bestwork-section {
+    background: #000;
+}
+
+.bestwork-section .container {
+    position: relative;
+}
+
+.bestwork-slider {
+    overflow: hidden;
+}
+
+ul.bestwork-slides {
+    width: 100%;
+    display: flex;
+}
+
+ul.bestwork-slides li {
+    width: 100%;
+    position: relative;
+}
+
+ul.bestwork-slides li .detail-txt {
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-top: -105px;
+    margin-right: 73px;
+    z-index: 5;
+    position: relative;
+    float: right;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.bestwork-slides li .detail-txt span:first-child {
+    font-family: "Playfair Display";
+    font-size: 72px;
+    line-height: 96px;
+    text-align: right;
+    padding-bottom: 35px;
+}
+
+ul.bestwork-slides li .detail-txt span:last-child {
+    font-family: "Epilogue";
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 57px;
+    /* or 150% */
+}
+
+ul.bestwork-slides li img:first-child {
+    float: right;
+    width: 77%;
+}
+
+ul.bestwork-slides li img:nth-child(2) {
+    float: left;
+    position: absolute;
+    top: 164px;
+    width: 36%;
+}
+
+.bestwork-slide-btn {
+    background: transparent;
+    border: none;
+}
+
+.bestwork-slide-btn:first-child {
+    margin-right: 9.5px;
+}
+
+.bestwork-slide-btn:last-child {
+    margin-left: 9.5px;
+}
+
+.bestwork-slide-buttons {
+    bottom: 0;
+    float: right;
+    margin-right: calc(50% - 35px);
+    display: inline-block;
+    margin-top: -24px;
+}
+
+.member-panel {
+    background: #000;
+    color: white;
+    padding-top: 245px;
+    padding-bottom: 274px;
+}
+
+.member-cardbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.member-cardbox .member-card {
+    max-width: 295px;
+    margin: 0 40px 0;
+}
+
+.member-cardbox .member-card:first-child {
+    margin-left: 0;
+}
+
+.member-cardbox .member-card:last-child {
+    margin-right: 0;
+}
+
+.member-card {
+    width: 33.3%;
+    position: relative;
+}
+
+.member-avatar {
+    height: 396px;
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.member-avatar img {
+    margin: 65PX 15px;
+}
+
+.member-detail {
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    position: relative;
+    margin-top: -47px;
+    width: 100%;
+}
+
+.member-name {
+    font-family: "Playfair Display";
+    font-size: 56px;
+    line-height: 84px;
+    /* or 150% */
+}
+
+.member-pos, .member-etc {
+    font-family: "Epilogue";
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+}
+
+.member-etc {
+    text-align: center;
+}
+
+.member-etc span:first-child {
+    margin-right: 8px;
+}
+
+/* ????????????? about page-------------- */
+
+.we-create {
+    background: #000;
+    padding-top: 270px;
+}
+
+.create-title {
+    background: url('../img/we-create.png') top no-repeat;
+    background-size: contain;
+}
+
+.create-title img:nth-child(2) {
+    margin-right: 140px;
+    margin-top: -166px;
+    float: right;
+    z-index: 5;
+    position: relative;
+}
+
+.create-title>p {
+    padding-top: 195px;
+    padding-bottom: 126px;
+    margin-left: 110px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 77px;
+    line-height: 103px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+}
+
+.create-panel {
+    margin-right: 115px;
+    margin-left: 115px;
+    padding-bottom: 50px;
+    width: calc(100% - 230px);
+    border-bottom: 1px solid #3C3C3C;
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 178% */
+    letter-spacing: -0.02em;
+    color: #FCFCFC;
+    position: relative;
+}
+
+.create-panel p {
+    max-width: 647px;
+    margin-bottom: 28px;
+}
+
+.create-panel span {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 77px;
+    line-height: 103px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(252, 252, 252, 0.14);
+    position: absolute;
+    top: -21px;
+    left: -115px;
+}
+
+/* --------------------whatwedo.html */
+
+.what-we-do-subdescription {
+    max-width: 435px;
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fcfcfc;
+    /* or 178% */
+    letter-spacing: -0.02em;
+    margin-left: 66px;
+    padding-top: 24px;
+    padding-bottom: 340px;
+}
+
+.what-we-do-detail-panel {
+    background: black;
+    color: #fff;
+}
+
+.we-do-detail-title {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    padding-top: 42px;
+    z-index: 3;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.we-do-detail-title span:first-child {
+    font-size: 77px;
+    line-height: 103px;
+    background: linear-gradient(90.25deg, #fff 0%, #000 125%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.we-do-detail-title span:last-child {
+    line-height: 80px !important;
+    -webkit-text-stroke: 1px #fff;
+    /* width and color */
+    font-size: 89px;
+    line-height: 119px;
+    /* identical to box height */
+    text-align: right;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+.we-do-detail-title span:last-child {
+    margin-right: 48px;
+}
+
+.we-do-cardbox {
+    width: 100%;
+}
+
+.we-do-detail-title {
+    width: 100%;
+}
+
+.we-do-card {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #3C3C3C;
+}
+
+.we-do-detail {
+    display: flex;
+    margin-top: -43px;
+    margin-bottom: 152px;
+}
+
+.we-do-detail-txt {
+    margin-right: 136px;
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.we-do-detail-txt .detail {
+    padding-top: 63px;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 178% */
+    letter-spacing: -0.02em;
+    color: #FCFCFC;
+}
+
+.we-do-detail-txt .etc {
+    margin-top: 68px;
+    border-top: 1px solid #3c3c3c;
+    padding-top: 68px;
+    display: flex;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 178% */
+    letter-spacing: -0.02em;
+    color: rgba(252, 252, 252, 0.48);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.we-do-card.reverse .we-do-detail-title {
+    flex-direction: row-reverse;
+}
+
+.we-do-card.reverse .we-do-detail {
+    flex-direction: row-reverse;
+}
+
+.we-do-card.reverse .we-do-detail-txt {
+    margin-right: 0;
+    margin-left: 136px;
+}
+
+/* --------------------- */
+
 @media (max-width: 1080px) {
     .nav-item>a {
         font-size: 32px;
@@ -1478,6 +1884,30 @@ footer {
     .input-panel {
         padding-bottom: 90px;
     }
+    /* ---------------------whatwedo page */
+    .we-do-detail-title span:first-child {
+        font-size: 48px;
+    }
+    .we-do-detail-txt {
+        margin-right: 15px;
+    }
+    .we-do-detail {
+        margin-bottom: 45px;
+    }
+    .we-do-card.reverse .we-do-detail-txt {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    /* For about.html page */
+    .create-title>p {
+        font-size: 45px;
+        line-height: 75px;
+        padding-top: 300px;
+        padding-bottom: 16px;
+    }
+    .create-panel p {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 660px) {
@@ -1568,6 +1998,53 @@ footer {
     #we-do-submenu .nav-item a span:nth-child(2) {
         display: none;
     }
+    .home-banner {
+        padding-top: 180px;
+    }
+    /* ---------------------whatwedo page */
+    .we-do-detail-title span:first-child {
+        font-size: 48px;
+    }
+    .we-do-detail-txt {
+        margin-right: 15px;
+    }
+    .we-do-detail {
+        margin-bottom: 45px;
+    }
+    .we-do-card.reverse .we-do-detail-txt {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .we-do-detail, .we-do-card.reverse .we-do-detail {
+        flex-direction: column;
+    }
+    .we-do-detail-title span:first-child {
+        font-size: 32px;
+    }
+    .we-do-detail-title span:last-child {
+        font-size: 48px;
+    }
+    .we-do-detail-img {
+        margin: 30px auto;
+    }
+    .we-do-detail-img img {
+        max-width: 100%;
+    }
+    /* For about page */
+    .create-title>p {
+        margin-left: 40px;
+    }
+    .create-panel {
+        margin: auto 40px;
+        width: calc(100% - 80px);
+    }
+    .create-panel span {
+        left: -40px;
+    }
+    .create-title {
+        background: url('../img/we-create2.png') top no-repeat;
+        background-size: contain;
+    }
 }
 
 @media (max-width: 460px) {
@@ -1615,5 +2092,101 @@ footer {
     }
     .input-panel h1 {
         font-size: 35px;
+    }
+    .border-word-e {
+        margin-bottom: 0;
+    }
+    .member-cardbox .member-card {
+        max-width: 100%;
+    }
+    .member-cardbox .member-card {
+        width: 100%;
+    }
+    .member-avatar {
+        width: 100%;
+    }
+    .member-detail {
+        margin-top: 0 !important;
+    }
+    .member-name {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .member-avatar img {
+        margin: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .home-banner {
+        padding-top: 100px;
+    }
+    /* --------------------whatwedo page */
+    .we-do-detail-title, .we-do-card.reverse .we-do-detail-title {
+        flex-direction: column-reverse;
+    }
+    .what-we-do-subdescription {
+        padding-bottom: 150px;
+    }
+    /* For about page */
+    .create-title>p {
+        font-size: 30px;
+        line-height: 43px;
+        padding-top: 210px;
+    }
+}
+
+@media (max-width:1080px) {
+    .company-detail .company-detail-text1 {
+        font-size: 35px;
+        line-height: 48px;
+        padding-bottom: 40px;
+    }
+    .member-cardbox {
+        flex-direction: column;
+    }
+    .member-cardbox .member-card {
+        margin: 0 auto 20px !important;
+    }
+    .member-card {
+        width: 295px;
+    }
+}
+
+@media (max-width: 660px) {
+    .company-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+    .company-detail .company-detail-text1 {
+        width: calc(100% - 40px);
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+    .company-detail .company-detail-text2 {
+        width: calc(100% - 40px);
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .company-detail .company-detail-text2 .company-detail2 {
+        margin: auto;
+        padding: auto;
+        padding-bottom: 40px;
+    }
+    ul.bestwork-slides li .detail-txt span:first-child {
+        font-size: 50px;
+        line-height: 80px;
+    }
+    ul.bestwork-slides li .detail-txt {
+        margin-right: 15px;
+        margin-left: 15px;
+        width: calc(100% - 30px);
+    }
+}
+
+@media(max-width: 460px) {
+    ul.bestwork-slides li .detail-txt span:first-child {
+        font-size: 35px;
+        line-height: 56px;
     }
 }
