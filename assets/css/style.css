@@ -272,7 +272,7 @@ header {
     bottom: 0;
     margin-left: 30px;
     margin-bottom: 23px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .video-card-text p {
@@ -859,12 +859,6 @@ body #mixedSlider .MS-content .item:nth-child(2) {
     }
 }
 
-@media (max-width: 767px) {
-    body #mixedSlider .MS-content .item {
-        width: 100%;
-    }
-}
-
 body #mixedSlider .MS-content .item .imgTitle {
     position: absolute;
     z-index: 1;
@@ -934,30 +928,12 @@ body #mixedSlider .MS-controls button:hover {
     }
 }
 
-@media (max-width: 767px) {
-    body #mixedSlider .MS-controls button {
-        font-size: 20px;
-    }
-}
-
 body #mixedSlider .MS-controls .MS-left {
     left: 20px;
 }
 
-@media (max-width: 767px) {
-    body #mixedSlider .MS-controls .MS-left {
-        left: -10px;
-    }
-}
-
 body #mixedSlider .MS-controls .MS-right {
     right: 35px;
-}
-
-@media (max-width: 767px) {
-    body #mixedSlider .MS-controls .MS-right {
-        right: 0px;
-    }
 }
 
 .container #mixedSlider .MS-left {
@@ -1756,6 +1732,139 @@ ul.bestwork-slides li img:nth-child(2) {
     margin-left: 136px;
 }
 
+/* For portfolio page */
+
+.process-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 73px;
+}
+
+.process-wrapper .process-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 51%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+    ;
+}
+
+.process-wrapper .process-item:first-child, .process-wrapper .process-item:nth-child(5) {
+    margin-left: 49%;
+}
+
+.process-wrapper .process-item:nth-child(2), .process-wrapper .process-item:nth-child(4) {
+    margin-left: 24%;
+}
+
+.process-wrapper .process-item:nth-child(3) {
+    margin-left: 0;
+}
+
+.process-item span {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 43px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+}
+
+.process-item span:last-child {
+    text-transform: uppercase;
+    background: linear-gradient(90.25deg, #fcfcfc 0%, #000 125%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.process-item span:first-child {
+    color: #FFFFFF;
+}
+
+/* for recent works section*/
+
+.recent-works h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 77px;
+    line-height: 103px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    background: linear-gradient(90.25deg, #fcfcfc 0%, #000 125%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 59px;
+}
+
+/* for other services section */
+
+.other-services {
+    background: #000;
+    font-style: normal;
+    font-weight: normal;
+    padding-bottom: 189px;
+}
+
+.other-services .container {
+    display: flex;
+    border-top: 1px solid #3C3C3C;
+}
+
+.other-services .service-detail-img img {
+    margin-top: 89px;
+    width: 100%;
+    object-fit: cover;
+    /* background: url('../img/wedo.jpg') no-repeat; */
+    /* background-size: 382px 382px; */
+    /* background-position: bottom; */
+}
+
+.other-services .service-detail-txt {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+}
+
+.other-services .service-detail-txt .service-etc {
+    display: flex;
+    margin-right: 136px;
+    border-top: 1px solid #3C3C3C;
+    border-bottom: 1px solid #3C3C3C;
+    padding-top: 71px;
+    padding-bottom: 60px;
+}
+
+.other-services .service-detail-txt .service-etc p {
+    font-family: "Epilogue";
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 178% */
+    letter-spacing: -0.02em;
+    color: rgba(252, 252, 252, 0.48);
+    margin-bottom: 7px;
+}
+
+.other-services .service-detail-txt .service-detail-title p {
+    font-family: "Playfair Display";
+    font-size: 77px;
+    line-height: 103px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    background: linear-gradient(90.25deg, #fcfcfc 0%, #000 99.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 42px;
+    margin-bottom: 61px;
+}
+
+.other-services .service-detail-img {
+    width: 37%;
+}
+
 /* --------------------- */
 
 @media (max-width: 1080px) {
@@ -1908,6 +2017,45 @@ ul.bestwork-slides li img:nth-child(2) {
     .create-panel p {
         max-width: 100%;
     }
+    /* for portfolio page */
+    .other-services .service-detail-txt .service-etc {
+        margin-right: 20px;
+    }
+    .other-services .service-detail-txt .service-detail-title p {
+        font-size: 45px;
+    }
+    .other-services {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    body #mixedSlider .MS-content .item {
+        width: 100%;
+    }
+    .other-services .container {
+        flex-direction: column;
+    }
+    .other-services .service-detail-txt {
+        width: 100%;
+    }
+    .other-services .service-detail-img {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    body #mixedSlider .MS-controls .MS-right {
+        right: 0px;
+    }
+    body #mixedSlider .MS-controls .MS-left {
+        left: -10px;
+    }
+    body #mixedSlider .MS-controls button {
+        font-size: 20px;
+    }
+    .recent-works h2 {
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -2044,6 +2192,14 @@ ul.bestwork-slides li img:nth-child(2) {
     .create-title {
         background: url('../img/we-create2.png') top no-repeat;
         background-size: contain;
+    }
+    /* for portfolio page */
+    .process-wrapper div {
+        margin: 0 20px !important;
+        width: calc(100% - 40px) !important;
+    }
+    .what-we-do-subdescription {
+        padding-bottom: 150px;
     }
 }
 
@@ -2190,3 +2346,5 @@ ul.bestwork-slides li img:nth-child(2) {
         line-height: 56px;
     }
 }
+
+@media (max-width: 767px) {}

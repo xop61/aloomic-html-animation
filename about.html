@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Aloomic</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/basic.css">
+    <link rel="stylesheet" href="./assets/css/slide.css">
+    <link rel="alternate icon" type="image/png" href="./assets/img/icons/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./assets/js/slide.js"></script> -->
+    <script type="text/javascript" src="./assets/js/function.js"></script>
+</head>
+
+<body>
+    <!-- Header beginning -->
+    <header>
+        <div class="container">
+            <div class="display-center header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu-icon">
+                    <button class="menu-button">
+                        <img src="./assets/img/icons/hamberger.svg" alt="">
+                    </button>
+                </div>
+                <!-- Nav Header beginning -->
+                <div class="nav-menu">
+                    <div class="container">
+                        <div class="display-center header-content">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="./assets/img/logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="menu-icon">
+                                <button class="menu-button">
+                                    <img src="./assets/img/icons/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nav Header content beginning -->
+                    <div class="nav-content container" id="main-menu">
+                        <div class="nav-item">
+                            <a href="index.html"><span>home</span></a>
+                            <div class="menu-thumb hidden">
+                                <img src="./assets/img/thumb1.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna</p>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#" id="we-do-menu"><span>what we do</span></a>
+                            <div class="menu-thumb hidden">
+                                <img src="./assets/img/thumb2.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna</p>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="about.html"><span>about</span></a>
+                            <div class="menu-thumb hidden">
+                                <img src="./assets/img/thumb3.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna</p>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="portfolio.html"><span>portfolio</span></a>
+                            <div class="menu-thumb hidden">
+                                <img src="./assets/img/thumb1.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna</p>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="blog.html"><span>blog</span></a>
+                            <div class="menu-thumb hidden">
+                                <img src="./assets/img/thumb2.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna</p>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="contact.html"><span>contact</span></a>
+                            <div class="menu-thumb hidden">
+                                <img src="./assets/img/thumb3.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-content container hidden" id="we-do-submenu">
+                        <div class="nav-item">
+                            <a href="#" id="back-to-mainmenu">
+                                <span>
+                                    <img src="./assets/img/left_arrow.svg" alt="close submenu">
+                                </span>
+                                <span style="float: right;">back</span>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="wedo.html">
+                                <span>
+                                    ui-ux
+                                </span>
+                                <span style="float: right;">ui-ux</span>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="wedo.html">
+                                <span>
+                                    web dev.
+                                </span>
+                                <span style="float: right;">web dev.</span>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="wedo.html">
+                                <span>
+                                    web design
+                                </span>
+                                <span style="float: right;">web design</span>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="wedo.html">
+                                <span>
+                                    graph. design
+                                </span>
+                                <span style="float: right;">graph. design</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Nav Header content end-->
+                </div>
+                <!-- Nav Header end -->
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main contents beginning -->
+    <div class="full-screen">
+        <!-- Home banner beginning -->
+        <div class="home-banner" style="padding-top: 230px;padding-bottom: 215px;">
+            <div class="container">
+                <h1 class="text-1">
+                    <span class="explosion-icon">
+                        <img src="./assets/img/explosion.svg" alt="">
+                    </span> ABOUT OUR
+                </h1>
+                <h1 class="text-1-italic p-l-10">COMPANY</h1>
+                <div class="company-detail">
+                    <div class="company-detail-text1">
+                        Our mission is dolor sit amet,
+                        <span>onsectetur adipiscing </span>
+                        elit ut aliquam, purus sit<br />
+                        <span>amet luctus</span>
+                    </div>
+                    <div class="company-detail-text2">
+                        <div class="company-detail2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor
+                        </div>
+                        <div class="company-img">
+                            <img src="./assets/img/company-detail.jpg">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Home banner end -->
+        <div class="bestwork-section">
+            <div class="container">
+                <div class="bestwork-slider">
+                    <ul class="bestwork-slides">
+                        <li class="slide">
+                            <img src="./assets/img/bestwork1.jpg" />
+                            <img src="./assets/img/bestwork2.jpg" />
+                            <p class="detail-txt">
+                                <span>
+                                    The <br />Best works &nbsp;&nbsp;*
+                                </span>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor
+                                </span>
+                            </p>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="bestwork-slide-buttons">
+                    <button type="button" class="bestwork-slide-btn">
+                        <span class="bestwork-prev">
+                            <img src="./assets/img/icons/bestwork-prev.svg">
+                        </span>
+                    </button>
+                    <button type="button" class="bestwork-slide-btn">
+                        <span class="bestwork-next">
+                            <img src="./assets/img/icons/bestwork-next.svg">
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- member blog beginning -->
+        <div class="member-panel">
+            <div class="container">
+                <div class="member-cardbox">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <img src="./assets/img/face1.png">
+                        </div>
+                        <div class="member-detail">
+                            <span class="member-name">
+                                Eveline<br>
+                                Gerand,
+                            </span>
+                            <p class="member-pos">
+                                Founder
+                            </p>
+                            <p class="member-etc">
+                                <span>28 y.o.</span>
+                                <span>England</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <img src="./assets/img/face2.png">
+                        </div>
+                        <div class="member-detail">
+                            <span class="member-name">
+                                Kitani<br>
+                                Sarasvati,
+                            </span>
+                            <p class="member-pos">
+                                Photo Director
+                            </p>
+                            <p class="member-etc">
+                                <span>28 y.o.</span>
+                                <span>Maldives</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <!-- <img src="./assets/img/face1.png"> -->
+                        </div>
+                        <div class="member-detail">
+                            <span class="member-name">
+                                Sarah<br>
+                                Yeon,
+                            </span>
+                            <p class="member-pos">
+                                Producer
+                            </p>
+                            <p class="member-etc">
+                                <span>25 y.o.</span>
+                                <span>New York</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- What we do beginning -->
+        <div class="what-we-do" style="padding-top:50px;">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-2">
+                        <span>
+                            <img src="./assets/img/explosion.svg" alt="">
+                        </span> what we do
+                    </h2>
+                    <h2 class="text-2 text-gradient">and love</h2>
+                </div>
+                <!-- Custom slide beginning -->
+                <!-- Custom slide end -->
+                <div class="slide-1">
+                    <div class="slide-cards-control">
+                        <button id="right-arrow">
+                            <img src="./assets/img/icons/arrow.svg" alt="" />
+                        </button>
+                        <button id="left-arrow">
+                            <img src="./assets/img/icons/arrow.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="slide-cards">
+                        <div class="slide-item">
+                            <span class="slide-item-mask"></span>
+                            <img src="./assets//img/slide/1.jpg" alt="">
+                            <div class="slide-item-content">
+                                <h2>web design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</p>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <span class="slide-item-mask"></span>
+                            <img src="./assets//img/slide/2.jpg" alt="">
+                            <div class="slide-item-content">
+                                <h2>UI/UX design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</p>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <span class="slide-item-mask"></span>
+                            <img src="./assets//img/slide/1.jpg" alt="">
+                            <div class="slide-item-content">
+                                <h2>web design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</p>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <span class="slide-item-mask"></span>
+                            <img src="./assets//img/slide/2.jpg" alt="">
+                            <div class="slide-item-content">
+                                <h2>UI/UX design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</p>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <span class="slide-item-mask"></span>
+                            <img src="./assets//img/slide/2.jpg" alt="">
+                            <div class="slide-item-content">
+                                <h2>UI/UX design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What we do end -->
+        <!-- we create section beginning -->
+        <div class="we-create">
+            <div class="container">
+                <div class="create-title">
+                    <!-- <img src="./assets/img/we-create.png"> -->
+                    <!-- <img src="./assets/img/we-create1.jpg">
+                    <img src="./assets/img/we-create2.jpg"> -->
+                    <p>
+                        we create<br />
+                        beautiful things
+                    </p>
+                    <div class="create-panel">
+                        <span>*</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna
+                            fringilla
+                            urna, porttitor rhoncus dolor</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna
+                            fringilla
+                            urna, porttitor rhoncus dolor</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- What we love beginning -->
+        <div class="we-love" style="padding-bottom:0;">
+            <div class="container">
+                <div class="border-word">
+                    <h2>Creative</h2>
+                </div>
+                <div class="tip-photo tip-photo1">
+                    <img src="./assets/img/thumb1.jpg" />
+                </div>
+                <div class="border-word">
+                    <h2>better</h2>
+                </div>
+                <div class="border-word">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                        venenatis, lectus
+                    </p>
+                </div>
+                <div class="tip-photo tip-photo2">
+                    <img src="./assets/img/thumb2.jpg" />
+                </div>
+                <div class="border-word">
+                    <h2>reasonable</h2>
+                </div>
+                <div class="border-word">
+                    <h2 class="star-mark">*</h2>
+                </div>
+                <div class="border-word">
+                    <h2>for</h2>
+                </div>
+                <div class="tip-photo tip-photo3">
+                    <img src="./assets/img/thumb2.jpg" />
+                </div>
+                <div class="border-word border-word-e">
+                    <h2>every business.</h2>
+                </div>
+            </div>
+        </div>
+        <!-- What we love end -->
+        <div class="contact-panel" style="padding-bottom: 174px;">
+            <div class="contact-panel-content">
+                <div class="contact-info-wrapper">
+                    <div class="contact-item">
+                        <span>find us here</span>
+                        <span>New York 11223</span>
+                        <span>USA, NY</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>our email</span>
+                        <span>email@gmail.com</span>
+
+                    </div>
+                    <div class="contact-item">
+                        <span>our email</span>
+                        <span>+7(916)344-55-22</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="floating-panel">
+            <div class="container">
+                <marquee behavior="scroll" direction="left" scrollamount="5" scrolldelay=0 style="position: relative;">
+                    <span>lets work together</span>
+                    <span class="spot"></span>
+                    <span>lets work together</span>
+                </marquee>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-section1">
+                    <div class="icon-wrapper">
+                        <img src="./assets/img/icon.png">
+                    </div>
+                    <div class="navigation-wrapper">
+                        <div class="list">
+                            <a>
+                                Navigation
+                            </a>
+                            <a href="#">
+                                Home
+                            </a>
+                            <a href="#">
+                                About
+                            </a>
+                            <a href="#">
+                                Services
+                            </a>
+                            <a href="#">
+                                Blog
+                            </a>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-wrapper">
+                        <div class="list">
+                            <a>
+                                Tell us your needs
+                            </a>
+                            <a href="#">
+                                email@gmail.com
+                            </a>
+                            <a href="#">
+                                +7 (916) 344-55-22
+                            </a>
+                            <a href="#">
+                                New York 11223
+                                USA, NY
+                            </a>
+                        </div>
+                    </div>
+                    <div class="services-wrapper">
+                        <div class="list">
+                            <a>Services</a>
+                            <a href="#">UI design</a>
+                            <a href="#">Web design</a>
+                            <a href="#">Branding</a>
+                            <a href="#">Branding</a>
+                            <a href="#">Branding</a>
+                            <a href="#">Branding</a>
+                            <a href="#">Web design</a>
+                            <a href="#">UI design</a>
+                        </div>
+                    </div>
+                    <div class="email-input-wrapper">
+                        <p>Sign up to newsletter</p>
+                        <div class="input-section">
+
+                            <input type="email" placeholder="YOUR EMAIL">
+                            <span>
+                                <img src="./assets/img/right_arrow.svg">
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-section2">
+                    <div class="section1">
+                        <span><a href="#">Behance</a></span>
+                        <span><a href="#">Dribble</a></span>
+                        <span><a href="#">Pinterest</a></span>
+                    </div>
+                    <div class="section2">
+                        <span><a href="#">terms</a></span>
+                        <span><a href="#">privacy</a></span>
+                        <span><a href="#">policy</a></span>
+                    </div>
+                    <div class="section3">
+                        <span>copyright 2021</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <span id="device-ruler"></span>
+    <!-- Main contents end -->
+</body>
+
+</html>
