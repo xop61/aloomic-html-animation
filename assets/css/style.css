@@ -1865,6 +1865,68 @@ ul.bestwork-slides li img:nth-child(2) {
     width: 37%;
 }
 
+/* for projects page */
+
+.projects-panel {
+    background: black;
+    color: white;
+    padding-top: 207px;
+}
+
+.project-item .main-img {
+    position: relative;
+}
+
+.project-item .main-img img:first-child {
+    width: 100%;
+}
+
+.project-item .main-img img:first-child {
+    width: 85%;
+    position: relative;
+    z-index: 3;
+}
+
+.project-item .main-img img:nth-child(2) {
+    position: relative;
+    margin-right: 0;
+    margin-top: -110px;
+    float: right;
+    width: 29%;
+    z-index: 2;
+}
+
+.project-item .project-subdetail {
+    padding-top: 34px;
+    padding-bottom: 130px;
+}
+
+.project-item .project-subdetail .project-etc {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+}
+
+.project-etc span:first-child {
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.project-etc span:last-child {
+    color: white;
+}
+
+.project-item .project-subdetail>p {
+    padding-bottom: 30px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 96px;
+}
+
 /* --------------------- */
 
 @media (max-width: 1080px) {
@@ -2200,6 +2262,11 @@ ul.bestwork-slides li img:nth-child(2) {
     }
     .what-we-do-subdescription {
         padding-bottom: 150px;
+    }
+    /* for projects page */
+    .project-item .project-subdetail>p {
+        font-size: 43px;
+        line-height: 45px;
     }
 }
 
