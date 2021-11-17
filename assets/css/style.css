@@ -65,7 +65,7 @@ header {
     text-transform: uppercase;
 }
 
-.nav-item:hover, .nav-item>a:hover {
+#main-menu .nav-item:hover, .nav-item>a:hover {
     font-style: italic !important;
     background: linear-gradient(#eee, #333);
     -webkit-background-clip: text;
@@ -94,6 +94,7 @@ header {
     bottom: 20px;
     left: 10px;
     z-index: 3;
+    -webkit-text-fill-color: #FCFCFC;
 }
 
 .nav-item .menu-thumb img {
@@ -1136,18 +1137,16 @@ body #mixedSlider .MS-controls .MS-right {
 
 .footer .footer-section1 {
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
 .footer .footer-section1>div {
-    width: 15%;
-    margin-left: 35px;
+    margin: 0;
 }
 
-.footer .footer-section1>div:last-child {
-    margin-left: 60px;
-    margin-right: 70px;
-    width: 26%;
+.footer .email-input-wrapper {
+    max-width: 250px;
 }
 
 .footer .footer-section1 a {
@@ -1638,7 +1637,6 @@ ul.bestwork-slides li img:nth-child(2) {
     /* identical to box height */
     letter-spacing: -0.02em;
     padding-top: 42px;
-    z-index: 3;
     position: relative;
     text-transform: uppercase;
 }
@@ -2055,6 +2053,22 @@ ul.bestwork-slides li img:nth-child(2) {
     cursor: pointer;
 }
 
+/* for we-do submenu */
+
+#we-do-submenu .nav-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+#we-do-submenu .nav-item a {
+    font-size: 32px;
+    display: inline-block;
+}
+
+#we-do-submenu .nav-item a:last-child {
+    text-align: right;
+}
+
 /* --------------------- */
 
 @media (max-width: 1080px) {
@@ -2217,6 +2231,10 @@ ul.bestwork-slides li img:nth-child(2) {
     .other-services {
         padding-bottom: 100px;
     }
+    /* for footer  */
+    .footer .email-input-wrapper {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2273,6 +2291,28 @@ ul.bestwork-slides li img:nth-child(2) {
     }
     .project-panel .next-project-section h2 {
         font-size: 35px;
+    }
+    /* for submenu  */
+    #we-do-submenu .nav-item {
+        flex-direction: column;
+    }
+    #we-do-submenu .nav-item a {
+        font-size: 24px;
+    }
+    #we-do-submenu .nav-item a:first-child {
+        padding-bottom: 11px;
+    }
+    #we-do-submenu .nav-item a:last-child {
+        text-align: left;
+        border-top: 1px solid #575757;
+        padding-top: 11px;
+    }
+    #we-do-submenu div.nav-item:first-child {
+        flex-direction: row;
+    }
+    #we-do-submenu div.nav-item:first-child a {
+        padding: 0;
+        border: none;
     }
 }
 
