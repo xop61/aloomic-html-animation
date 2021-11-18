@@ -1131,14 +1131,19 @@ body #mixedSlider .MS-controls .MS-right {
 .footer {
     background: #000000;
     color: #fff;
-    /* padding: 75px 20px 0px; */
-    padding-top: 75px;
+    padding: 75px 50px 0px;
+
+
 }
 
 .footer .footer-section1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.footer .footer-section1 .icon-wrapper img {
+    padding-left: 80px;
 }
 
 .footer .footer-section1>div {
@@ -1975,7 +1980,7 @@ ul.bestwork-slides li img:nth-child(2) {
 }
 
 .project-panel .project-description h2:first-child {
-    background: linear-gradient( 90.25deg, #fff 0%, #000 150.87%);
+    background: linear-gradient(90.25deg, #fff 0%, #000 150.87%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Playfair Display";
@@ -1996,7 +2001,7 @@ ul.bestwork-slides li img:nth-child(2) {
     font-weight: normal;
     font-size: 67px;
     line-height: 108.3%;
-    background: linear-gradient( 90.25deg, #fff 0%, #000 100.87%);
+    background: linear-gradient(90.25deg, #fff 0%, #000 100.87%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2041,7 +2046,7 @@ ul.bestwork-slides li img:nth-child(2) {
     line-height: 61px;
     text-align: center;
     letter-spacing: -0.02em;
-    background: linear-gradient( 90.25deg, #fff 0%, #000 100.87%);
+    background: linear-gradient(90.25deg, #fff 0%, #000 100.87%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0 auto 41px;
@@ -2072,76 +2077,102 @@ ul.bestwork-slides li img:nth-child(2) {
 /* --------------------- */
 
 @media (max-width: 1080px) {
+
+    /*  */
     .nav-item>a {
         font-size: 32px;
         line-height: 45px;
     }
+
     .container {
         max-width: 100% !important;
         margin-right: 15px !important;
         margin-left: 15px !important;
     }
+
     .text-1 {
         font-size: 50px;
         line-height: 70px;
     }
+
     .text-1-italic {
         font-size: 46px;
         line-height: 75px;
     }
+
     .text-1 span {
         left: 32px;
         top: 35px;
     }
+
     .text-1 span img {
         width: 40px;
     }
+
     .slide-item {
         width: 300px;
         height: 383px;
     }
+
     .slide-item img {
         width: 300px;
     }
+
     .slide-item-content {
         margin-top: 150px;
         margin-left: 60px;
     }
+
     .slide-item-content h2 {
         font-size: 50px;
         line-height: 80px;
     }
+
     .slide-cards-control {
         margin-left: 445px;
     }
+
     .we-love .container {
         margin: 0 auto !important;
         width: 450px;
     }
+
     .we-love .container h2, .we-love .container p {
         padding-top: 20px;
     }
+
     .we-love .container h2 {
         font-size: 32px;
     }
+
     .we-love .container p {
         padding-right: 80px;
     }
+
     .border-word-e h2 {
         padding-left: 102px;
         padding-right: 102px;
     }
+
     .input-panel h1 {
         font-size: 50px;
         padding: 0px;
     }
+
     .input-panel h1:first-child span img {
         margin-top: -20px;
         margin-left: -42px;
     }
+
     .floating-panel marquee span {
         font-size: 50px !important;
     }
+
+    /* for footer */
+    .footer {
+        padding: 20px 20px 0;
+    }
+
     .footer .footer-section1 {
         /* align-items: flex-start;
         display: flex;*/
@@ -2149,12 +2180,14 @@ ul.bestwork-slides li img:nth-child(2) {
         /* flex: 0 0 100%; */
         display: flex;
     }
+
     .footer .footer-section1>div {
         width: calc(33.33% - 35px);
         padding: 0px 16px 16px;
         margin: 0 auto auto;
         text-align: center;
     }
+
     .footer .footer-section1>div:last-child, .footer .footer-section1>div:first-child {
         width: 95% !important;
         margin: 0px 0px 16px !important;
@@ -2162,55 +2195,71 @@ ul.bestwork-slides li img:nth-child(2) {
         padding: 0px 16px 16px;
         text-align: left;
     }
+
     .footer .footer-section1 .icon-wrapper img {
-        height: 50px;
+        height: 70px;
+        padding-left: 0;
     }
+
     .footer .footer-section2 {
         flex-direction: column;
         padding: 16px 16px 16px;
     }
+
     .footer .footer-section2>div {
         display: flex;
         justify-content: space-between;
     }
+
     .footer .footer-section2>div {
         margin-bottom: 16px;
     }
+
     .footer .footer-section2 span {
         margin-right: 0px;
     }
+
     .footer .footer-section2>.section1, .footer .footer-section2>.section2 {
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .footer .footer-section2>div.section3 {
         margin: auto;
     }
+
     .clients-review p {
         font-size: 30px;
     }
+
     .showreel-section .section-title span img {
         width: 40px;
         top: 10px;
         left: 10px;
     }
+
     .input-panel {
         padding-bottom: 90px;
     }
+
     /* ---------------------whatwedo page */
     .we-do-detail-title span:first-child {
         font-size: 48px;
     }
+
     .we-do-detail-txt {
         margin-right: 15px;
     }
+
     .we-do-detail {
         margin-bottom: 45px;
     }
+
     .we-do-card.reverse .we-do-detail-txt {
         margin-right: 0;
         margin-left: 15px;
     }
+
     /* For about.html page */
     .create-title>p {
         font-size: 45px;
@@ -2218,19 +2267,24 @@ ul.bestwork-slides li img:nth-child(2) {
         padding-top: 300px;
         padding-bottom: 16px;
     }
+
     .create-panel p {
         max-width: 100%;
     }
+
     /* for portfolio page */
     .other-services .service-detail-txt .service-etc {
         margin-right: 20px;
     }
+
     .other-services .service-detail-txt .service-detail-title p {
         font-size: 45px;
     }
+
     .other-services {
         padding-bottom: 100px;
     }
+
     /* for footer  */
     .footer .email-input-wrapper {
         max-width: 100%;
@@ -2241,75 +2295,95 @@ ul.bestwork-slides li img:nth-child(2) {
     body #mixedSlider .MS-content .item {
         width: 100%;
     }
+
     .other-services .container {
         flex-direction: column;
     }
+
     .other-services .service-detail-txt {
         width: 100%;
     }
+
     .other-services .service-detail-img {
         width: 80%;
         margin-right: 10%;
         margin-left: 10%;
     }
+
     body #mixedSlider .MS-controls .MS-right {
         right: 0px;
     }
+
     body #mixedSlider .MS-controls .MS-left {
         left: -10px;
     }
+
     body #mixedSlider .MS-controls button {
         font-size: 20px;
     }
+
     .recent-works h2 {
         font-size: 50px;
     }
+
     /* for project page */
     .project-panel .project-abstract {
         flex-direction: column;
         left: 0px;
     }
+
     .project-panel .project-abstract .column {
         flex-direction: row;
     }
+
     .project-panel .project-abstract .column span {
         margin-right: 20px;
         padding: 0;
     }
+
     .project-panel .project-description h2:first-child {
         font-size: 32px;
         line-height: 39px;
         padding-bottom: 40px;
         margin-top: -48px;
     }
+
     .project-panel .project-description>p, .project-panel .project-description>h2 {
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .project-panel .project-description h2.about-project {
         font-size: 35px;
     }
+
     .project-panel .next-project-section h2 {
         font-size: 35px;
     }
+
     /* for submenu  */
     #we-do-submenu .nav-item {
         flex-direction: column;
     }
+
     #we-do-submenu .nav-item a {
         font-size: 24px;
     }
+
     #we-do-submenu .nav-item a:first-child {
         padding-bottom: 11px;
     }
+
     #we-do-submenu .nav-item a:last-child {
         text-align: left;
         border-top: 1px solid #575757;
         padding-top: 11px;
     }
+
     #we-do-submenu div.nav-item:first-child {
         flex-direction: row;
     }
+
     #we-do-submenu div.nav-item:first-child a {
         padding: 0;
         border: none;
@@ -2320,74 +2394,94 @@ ul.bestwork-slides li img:nth-child(2) {
     .nav-menu .nav-content .menu-thumb {
         display: none;
     }
+
     .text-1 {
         font-size: 32px;
         line-height: 50px;
         margin-left: 30px;
     }
+
     .text-1-italic {
         font-size: 30px;
         line-height: 50px;
         margin-left: 0px;
     }
+
     .text-2 {
         font-size: 32px;
     }
+
     .video-cards {
         flex-direction: column;
     }
+
     .video-cards .cards-box {
         width: calc(100% - 24px);
     }
+
     .video-cards .cards-box:last-child {
         margin-left: 0px;
     }
+
     .our-client-title img {
         width: 40px;
     }
+
     .our-client-title h2 {
         font-size: 40px;
     }
+
     .our-clients-pre {
         flex-direction: column;
     }
+
     .our-clients img {
         width: 100%;
     }
+
     .slide-cards-control {
         margin-left: auto;
         margin-top: 0px;
         right: 30px;
         width: 50px;
     }
+
     .slide-item-content {
         margin-left: 45px;
     }
+
     .slide-item-content h2 {
         font-size: 40px;
     }
+
     .we-love {
         padding-top: 70px;
     }
+
     .clients-review {
         background-size: contain;
         padding-bottom: 0;
         background-position: center center;
     }
+
     .clients-review h2 {
         font-size: 45px;
     }
+
     .clients-review p {
         padding-right: 30px;
         padding-left: 30px;
     }
+
     .clients-review p {
         font-size: 24px;
     }
+
     .input-panel h1 {
         font-size: 35px;
         line-height: 50px;
     }
+
     .footer .footer-section1>div {
         width: 95% !important;
         margin: 0 0 16px;
@@ -2395,70 +2489,90 @@ ul.bestwork-slides li img:nth-child(2) {
         padding: 0px 16px 16px;
         text-align: left;
     }
+
     .contact-info-wrapper {
         padding-left: 20px;
     }
+
     .contact-panel-content {
         background-position-x: 630px;
     }
+
     #we-do-submenu .nav-item a span:nth-child(2) {
         display: none;
     }
+
     .home-banner {
         padding-top: 180px;
     }
+
     /* ---------------------whatwedo page */
     .we-do-detail-title span:first-child {
         font-size: 48px;
     }
+
     .we-do-detail-txt {
         margin-right: 15px;
     }
+
     .we-do-detail {
         margin-bottom: 45px;
     }
+
     .we-do-card.reverse .we-do-detail-txt {
         margin-right: 0;
         margin-left: 15px;
     }
+
     .we-do-detail, .we-do-card.reverse .we-do-detail {
         flex-direction: column;
     }
+
     .we-do-detail-title span:first-child {
         font-size: 32px;
     }
+
     .we-do-detail-title span:last-child {
         font-size: 48px;
     }
+
     .we-do-detail-img {
         margin: 30px auto;
     }
+
     .we-do-detail-img img {
         max-width: 100%;
     }
+
     /* For about page */
     .create-title>p {
         margin-left: 40px;
     }
+
     .create-panel {
         margin: auto 40px;
         width: calc(100% - 80px);
     }
+
     .create-panel span {
         left: -40px;
     }
+
     .create-title {
         background: url('../img/we-create2.png') top no-repeat;
         background-size: contain;
     }
+
     /* for portfolio page */
     .process-wrapper div {
         margin: 0 20px !important;
         width: calc(100% - 40px) !important;
     }
+
     .what-we-do-subdescription {
         /* padding-bottom: 150px; */
     }
+
     /* for projects page */
     .project-item .project-subdetail>p {
         font-size: 43px;
@@ -2474,91 +2588,113 @@ ul.bestwork-slides li img:nth-child(2) {
         display: block;
         text-align: center;
     }
+
     .we-love .container>div {
         padding: auto !important;
     }
+
     .tip-photo2 {
         margin-right: 0;
     }
+
     .tip-photo3 {
         margin-left: 0;
     }
+
     .border-word-e h2 {
         padding: 20px;
     }
+
     .clients-review p {
         font-size: 20px;
         line-height: 24px;
     }
+
     .clients-review h2 {
         font-size: 32px;
     }
+
     .footer .footer-section2>.section1, .footer .footer-section2>.section2 {
         flex-direction: column;
         text-align: center;
     }
+
     .footer .footer-section2 span {
         margin-bottom: 20px;
     }
-    .footer {
-        padding-top: 20px;
-    }
+
     .floating-panel marquee span {
         font-size: 32px !important;
     }
+
     .border-word h2 {
         line-height: 20px;
     }
+
     .input-panel h1 {
         font-size: 35px;
     }
+
     .border-word-e {
         margin-bottom: 0;
     }
+
     .member-cardbox .member-card {
         max-width: 100%;
     }
+
     .member-cardbox .member-card {
         width: 100%;
     }
+
     .member-avatar {
         width: 100%;
     }
+
     .member-detail {
         margin-top: 0 !important;
     }
+
     .member-name {
         font-size: 40px;
         line-height: 50px;
     }
+
     .member-avatar img {
         margin: auto;
         margin-top: 30px;
         width: 100%;
     }
+
     .home-banner {
         padding-top: 100px;
     }
+
     /* --------------------whatwedo page */
     .we-do-detail-title, .we-do-card.reverse .we-do-detail-title {
         flex-direction: column-reverse;
     }
+
     .what-we-do-subdescription {
         /* padding-bottom: 150px; */
     }
+
     /* For about page */
     .create-title>p {
         font-size: 30px;
         line-height: 43px;
         padding-top: 210px;
     }
+
     /* for project page */
     .project-panel .project-abstract {
         position: relative;
     }
+
     .project-panel .project-description h2:first-child {
         margin-top: 55px;
     }
+
     .project-panel .project-abstract>div {
         margin-left: 15px;
         margin-right: 15px;
@@ -2571,12 +2707,15 @@ ul.bestwork-slides li img:nth-child(2) {
         line-height: 48px;
         padding-bottom: 40px;
     }
+
     .member-cardbox {
         flex-direction: column;
     }
+
     .member-cardbox .member-card {
         margin: 0 auto 20px !important;
     }
+
     .member-card {
         width: 295px;
     }
@@ -2587,26 +2726,31 @@ ul.bestwork-slides li img:nth-child(2) {
         flex-direction: column;
         text-align: center;
     }
+
     .company-detail .company-detail-text1 {
         width: calc(100% - 40px);
         padding-right: 20px;
         padding-left: 20px;
         margin-bottom: 30px;
     }
+
     .company-detail .company-detail-text2 {
         width: calc(100% - 40px);
         padding-right: 20px;
         padding-left: 20px;
     }
+
     .company-detail .company-detail-text2 .company-detail2 {
         margin: auto;
         padding: auto;
         padding-bottom: 40px;
     }
+
     ul.bestwork-slides li .detail-txt span:first-child {
         font-size: 50px;
         line-height: 80px;
     }
+
     ul.bestwork-slides li .detail-txt {
         margin-right: 15px;
         margin-left: 15px;
