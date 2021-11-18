@@ -1,6 +1,6 @@
 $(function () {
     $(".nav-item").hover(function () {
-        if ($(document).width() <= 660) {
+        if ($(document).width() <= 768) {
             $(".menu-thumb").addClass("hidden")
         } else if ($(document).width() <= 1080) {
             $(".menu-thumb").addClass("hidden")

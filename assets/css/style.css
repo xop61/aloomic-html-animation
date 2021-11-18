@@ -15,6 +15,7 @@ header {
 
 .header-content {
     justify-content: space-between;
+    margin: 0 50px;
 }
 
 .logo {
@@ -41,6 +42,7 @@ header {
 
 .nav-content {
     position: relative;
+    margin: 0 50px;
 }
 
 .nav-item {
@@ -2066,7 +2068,7 @@ ul.bestwork-slides li img:nth-child(2) {
 }
 
 #we-do-submenu .nav-item a {
-    font-size: 32px;
+    font-size: 31px;
     display: inline-block;
 }
 
@@ -2077,6 +2079,34 @@ ul.bestwork-slides li img:nth-child(2) {
 /* --------------------- */
 
 @media (max-width: 1080px) {
+
+    /* for header */
+
+    /* for submenu  */
+    #we-do-submenu .nav-item {
+        flex-direction: column;
+    }
+
+
+
+    #we-do-submenu .nav-item a:first-child {
+        padding-bottom: 11px;
+    }
+
+    #we-do-submenu .nav-item a:last-child {
+        text-align: left;
+        border-top: 1px solid #575757;
+        padding-top: 11px;
+    }
+
+    #we-do-submenu div.nav-item:first-child {
+        flex-direction: row;
+    }
+
+    #we-do-submenu div.nav-item:first-child a {
+        padding: 0;
+        border: none;
+    }
 
     /*  */
     .nav-item>a {
@@ -2292,6 +2322,26 @@ ul.bestwork-slides li img:nth-child(2) {
 }
 
 @media (max-width: 767px) {
+
+    /* for header */
+    .nav-content {
+        margin: 0 20px;
+    }
+
+    .header-content {
+        margin: 0 20px;
+    }
+
+    .nav-menu .nav-content .menu-thumb {
+        display: none;
+    }
+
+    /* for submenu */
+    #we-do-submenu .nav-item a {
+        font-size: 24px;
+    }
+
+    /*  */
     body #mixedSlider .MS-content .item {
         width: 100%;
     }
@@ -2361,39 +2411,10 @@ ul.bestwork-slides li img:nth-child(2) {
         font-size: 35px;
     }
 
-    /* for submenu  */
-    #we-do-submenu .nav-item {
-        flex-direction: column;
-    }
 
-    #we-do-submenu .nav-item a {
-        font-size: 24px;
-    }
-
-    #we-do-submenu .nav-item a:first-child {
-        padding-bottom: 11px;
-    }
-
-    #we-do-submenu .nav-item a:last-child {
-        text-align: left;
-        border-top: 1px solid #575757;
-        padding-top: 11px;
-    }
-
-    #we-do-submenu div.nav-item:first-child {
-        flex-direction: row;
-    }
-
-    #we-do-submenu div.nav-item:first-child a {
-        padding: 0;
-        border: none;
-    }
 }
 
 @media (max-width: 660px) {
-    .nav-menu .nav-content .menu-thumb {
-        display: none;
-    }
 
     .text-1 {
         font-size: 32px;
