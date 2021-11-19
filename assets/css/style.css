@@ -2849,3 +2849,44 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 @media (max-width: 767px) {}
+
+/* for jsslider */
+/*jssor slider arrow skin 104 css*/
+.jssora104 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssora104 .c {
+    fill: transparent;
+    opacity: .8;
+    stroke: white;
+    vector-effect: non-scaling-stroke;
+}
+
+.jssora104 .a {
+    fill: #ddd;
+    opacity: .8;
+}
+
+.jssora104:hover .c {
+    opacity: .6;
+}
+
+.jssora104:hover .a {
+    opacity: 1;
+}
+
+.jssora104.jssora104dn .c {
+    opacity: .3;
+}
+
+.jssora104.jssora104dn .a {
+    opacity: 1;
+}
+
+.jssora104.jssora104ds {
+    opacity: .3;
+    pointer-events: none;
+}
