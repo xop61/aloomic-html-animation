@@ -42,7 +42,7 @@ header {
 
 .nav-content {
     position: relative;
-    margin: 0 50px;
+
 }
 
 .nav-item {
@@ -1281,6 +1281,7 @@ footer {
 .contact-panel {
     padding: 200px 0;
     background-color: black;
+    position: relative;
 }
 
 .contact-panel-content {
@@ -1306,7 +1307,10 @@ footer {
 .contact-info-wrapper {
     /* margin-bottom: -50%; */
     /* margin-top: calc(-50% + 190px); */
-    padding: 245px 120px 320px;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    padding-top: 200px;
     color: white;
 }
 
@@ -2076,6 +2080,30 @@ ul.bestwork-slides li img:nth-child(2) {
     text-align: right;
 }
 
+/* for googlemap  */
+#map {
+    height: 730px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+a[href^="http://maps.google.com/maps"] {
+    display: none !important
+}
+
+a[href^="https://maps.google.com/maps"] {
+    display: none !important
+}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display: none;
+}
+
+.gmnoprint div {
+    background: none !important;
+}
+
 /* --------------------- */
 
 @media (max-width: 1080px) {
@@ -2512,7 +2540,8 @@ ul.bestwork-slides li img:nth-child(2) {
     }
 
     .contact-info-wrapper {
-        padding-left: 20px;
+        left: 20px;
+
     }
 
     .contact-panel-content {

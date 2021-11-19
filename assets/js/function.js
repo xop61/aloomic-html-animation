@@ -198,3 +198,129 @@ $(function () {
 });
 
 
+// for googlemap
+function initMap() {
+    // The location of Uluru
+    var zoom = 15;
+    const uluru = { lat: -34.879986750516096, lng: 138.59206451516428 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: zoom,
+        minZoom: zoom - 2,
+        maxZoom: zoom + 2,
+        center: uluru,
+        mapTypeControl: false,
+        keyboardShortcutsControl: false,
+        disableDefaultUI: true,
+        keyboardShortcuts: false,
+        styles: [
+            { elementType: "geometry", stylers: [{ color: "#000000" }] },
+            { elementType: "labels.text.stroke", stylers: [{ color: "#1C2A25" }] },
+            { elementType: "labels.text.fill", stylers: [{ color: "#74DBB0" }] },
+            {
+                featureType: "administrative.locality",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#74DBB0" }],
+            },
+            // {
+            //     featureType: "poi",
+            //     elementType: "labels.text.fill",
+            //     stylers: [{ color: "#74DBB0" }],
+            // },
+            {
+                featureType: "poi.park",
+                elementType: "geometry",
+                stylers: [{ visibility: "off" }],//color: "#101915"
+            },
+            {
+                featureType: "poi.park",
+                elementType: "labels.text.fill",
+                stylers: [{ visibility: "off" }],//color: "#74DBB0"
+            },
+            {
+                featureType: "poi.business",
+                elementType: "all",
+                stylers: [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [{ color: "#507C69" }],
+            },
+            {
+                featureType: "road",
+                elementType: "geometry.stroke",
+                stylers: [{ color: "#1C2A25" }],
+            },
+            {
+                featureType: "road",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#74DBB0" }],
+            },
+            {
+                featureType: "road.highway",
+                elementType: "geometry",
+                stylers: [{ color: "#746855" }],
+            },
+            {
+                featureType: "road.highway",
+                elementType: "geometry.stroke",
+                stylers: [{ color: "#1C2A25" }],
+            },
+            {
+                featureType: "road.highway",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#74DBB0" }],
+            },
+            {
+                featureType: "transit",
+                elementType: "geometry",
+                stylers: [{ visibility: "off" }],//color: "#2f3948"
+            },
+            {
+                featureType: "transit.station",
+                elementType: "labels.text.fill",
+                stylers: [{ visibility: "off" }],//color: "#74DBB0" 
+            },
+            {
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [{ color: "#17263c" }],
+            },
+            {
+                featureType: "water",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#74DBB0" }],
+            },
+            {
+                featureType: "water",
+                elementType: "labels.text.stroke",
+                stylers: [{ color: "#1C2A25" }],
+            },
+        ],
+    });
+
+    const image = "./assets/img/position.svg";
+    // const styleControl = document.getElementById("style-selector-control");
+
+
+    // The marker, positioned at Uluru
+
+    const mapType = new google.maps.StyledMapType();
+    map.mapTypes.set(`Dummy Style`, mapType);
+    map.setMapTypeId(`Dummy Style`);
+
+    const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        icon: image,
+        title: "Come here!"
+    });
+    marker.setMap(map);
+}
+
+
