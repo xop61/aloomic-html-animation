@@ -106,6 +106,7 @@ header {
     opacity: 0.5;
 }
 
+/*  */
 .hidden {
     display: none;
 }
@@ -159,10 +160,42 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-.circle-mark {
-    display: flex;
+/* for rounding circle */
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-mark-wrapper {
+    display: block;
+    float: left;
     justify-content: flex-end;
-    margin-top: 44px;
+    right: 50px;
+    bottom: 50px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.circle-mark {
+    /* display: flex; */
+
+    animation: App-logo-spin infinite 20s linear;
+    pointer-events: none;
+}
+
+.circle-mark-reverse {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    top: 31px;
+    width: 100%;
+    text-align: center;
+
 }
 
 .showreel-section {

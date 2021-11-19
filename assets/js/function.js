@@ -195,9 +195,34 @@ $(function () {
         $('#main-menu').addClass('hidden').removeClass('hidden');
         $('#we-do-submenu').addClass('hidden');
     });
+    // $('#scroll_value').css('left', ($('.circle-mark-wrapper').width() - $('#scroll_value').width()) / 2);
+    // for circle-rounding widget
+    var ypos = window.pageYOffset || document.documentElement.scrollTop;
+    var maxYvalue = $(document).height() - $(window).height();
+    var percent = parseInt(ypos * 100 / maxYvalue);
+
+    // for scrolling beginning
+    window.onscroll = function (e) {
+        console.log('ss');
+        $('.circle-mark path').css("opacity", 0);
+
+        // called when the window is scrolled.  
+        var ypos = window.pageYOffset || document.documentElement.scrollTop;
+        var maxYvalue = $(document).height() - $(window).height();
+        var percent = parseInt(ypos * 100 / maxYvalue);
+        $('#scroll_value').text(percent + "%");
+    }
 });
 
+// for scrolling stop
 
+$(window).scroll(function () {
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function () {
+        // do something
+        $('.circle-mark path').animate({ opacity: '1' });
+    }, 250));
+});
 // for googlemap
 function initMap() {
     // The location of Uluru
