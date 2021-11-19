@@ -253,6 +253,12 @@ function initMap() {
             //     elementType: "labels.text.fill",
             //     stylers: [{ color: "#74DBB0" }],
             // },
+
+            {
+                featureType: "poi",
+                elementType: "labels",
+                stylers: [{ visibility: "off" }],//color: "#101915"
+            },
             {
                 featureType: "poi.park",
                 elementType: "geometry",
@@ -311,6 +317,16 @@ function initMap() {
                 featureType: "transit.station",
                 elementType: "labels.text.fill",
                 stylers: [{ visibility: "off" }],//color: "#74DBB0" 
+            },
+            {
+                featureType: "transit",
+                elementType: "labels",
+                stylers: [{ visibility: "off" }],//color: "#74DBB0" 
+            },
+            {
+                featureType: "water",
+                elementType: "labels",
+                stylers: [{ visibility: "off" }],
             },
             {
                 featureType: "water",
