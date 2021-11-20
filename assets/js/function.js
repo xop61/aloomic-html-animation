@@ -201,10 +201,11 @@ $(function () {
     var maxYvalue = $(document).height() - $(window).height();
     var percent = parseInt(ypos * 100 / maxYvalue);
 
+    $('#scroll_value').text(percent + "%");
     // for scrolling beginning
     window.onscroll = function (e) {
         $('.circle-mark path').css("opacity", 0);
-
+        $('#scroll_value').css("opacity", 0);
         // called when the window is scrolled.  
         var ypos = window.pageYOffset || document.documentElement.scrollTop;
         var maxYvalue = $(document).height() - $(window).height();
@@ -222,6 +223,7 @@ $(window).scroll(function () {
     $.data(this, 'scrollTimer', setTimeout(function () {
         // do something
         $('.circle-mark path').animate({ opacity: '1' });
+        $('#scroll_value').animate({ opacity: "1" });
     }, 250));
 });
 // for googlemap

@@ -184,17 +184,23 @@ header {
 .circle-mark {
     /* display: flex; */
 
+}
+
+.circle-mark svg {
     animation: App-logo-spin infinite 20s linear;
     pointer-events: none;
 }
 
 .circle-mark-reverse {
+    font-family: "Epilogue";
     position: absolute;
     color: white;
-    font-size: 24px;
-    top: 31px;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
     width: 100%;
     text-align: center;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -2167,6 +2173,10 @@ a[href^="https://maps.google.com/maps"] {
     #we-do-submenu div.nav-item:first-child a {
         padding: 0;
         border: none;
+    }
+
+    #we-do-submenu .nav-item:focus-visible {
+        outline: none;
     }
 
     /*  */
