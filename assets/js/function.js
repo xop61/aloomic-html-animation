@@ -355,17 +355,22 @@ function initMap() {
         title: "Come here!"
     });
     marker.setMap(map);
-
-
     // const styleControl = document.getElementById("style-selector-control");
-
-
     // The marker, positioned at Uluru
 
     const mapType = new google.maps.StyledMapType();
     map.mapTypes.set(`Dummy Style`, mapType);
     map.setMapTypeId(`Dummy Style`);
+}
 
-
-
+function playPause() {
+    console.log('ss');
+    var vid = document.getElementById("vid");
+    if (vid.paused == true) {
+        vid.play();
+        $('.play-button img').attr('src', './assets/img/pause-icon.svg');
+    } else {
+        vid.pause();
+        $('.play-button img').attr('src', './assets/img/play-icon.svg');
+    }
 }
