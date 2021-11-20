@@ -1322,7 +1322,8 @@ footer {
 .contact-panel {
     padding: 200px 0;
     background-color: black;
-    position: relative;
+    /* open the below comment with only googlemap */
+    /* position: relative; */
 }
 
 .contact-panel-content {
@@ -1348,10 +1349,16 @@ footer {
 .contact-info-wrapper {
     /* margin-bottom: -50%; */
     /* margin-top: calc(-50% + 190px); */
-    position: absolute;
+
+    /* below 4 lines are for only googlemap using */
+    /* position: absolute;
     top: 200px;
     left: 120px;
-    padding-top: 200px;
+    padding-top: 200px; */
+
+    /* below 1 line is using only for map image */
+    padding: 245px 120px 320px;
+
     color: white;
 }
 
@@ -2591,8 +2598,11 @@ a[href^="https://maps.google.com/maps"] {
     }
 
     .contact-info-wrapper {
-        left: 20px;
+        /* below 1 line is only for googlemap */
+        /* left: 20px; */
 
+        /* below 1 line is only for map image*/
+        padding-left: 20px;
     }
 
     .contact-panel-content {
