@@ -31,13 +31,13 @@ header {
 .nav-menu {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 93px;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 93px);
     background-color: #000;
     z-index: 2;
-    transform: translateY(-1500px);
-    transition: transform 0.6s;
+    transform: translateY(-100vh);
+    transition: transform 0.4s;
 }
 
 .nav-content {
