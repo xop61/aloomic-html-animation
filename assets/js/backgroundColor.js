@@ -1,6 +1,18 @@
 $(function () {
+    var ypos = window.pageYOffset || document.documentElement.scrollTop;
+    var maxYvalue = $(document).height() - $(window).height();
+    var percent = parseInt(ypos * 100 / maxYvalue);
+    $('#scroll_value').text(percent + "%");
 
     window.onscroll = function (e) {
+        $('.circle-mark path').css("opacity", 0);
+        $('#scroll_value').css("opacity", 0);
+        // called when the window is scrolled.  
+        var ypos = window.pageYOffset || document.documentElement.scrollTop;
+        var maxYvalue = $(document).height() - $(window).height();
+        var percent = parseInt(ypos * 100 / maxYvalue);
+        $('#scroll_value').text(percent + "%");
+
         var ypos = window.pageYOffset || document.documentElement.scrollTop;
         if (ypos < 2800) {
             $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
@@ -37,4 +49,13 @@ $(function () {
             $('.client-section *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-w2b');
         }
     }
+});
+
+$(window).scroll(function () {
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function () {
+        // do something
+        $('.circle-mark path').animate({ opacity: '1' });
+        $('#scroll_value').animate({ opacity: "1" });
+    }, 250));
 });
