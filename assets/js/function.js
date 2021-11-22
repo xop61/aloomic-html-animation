@@ -39,13 +39,13 @@ $(function () {
         $(".client-explain:last-child").removeClass("hidden")
         $(this).addClass("hidden")
         $(".our-clients-pre").css("margin-bottom", 0)
-        $("#clients-explain").css("height", "auto")
+        $("#clients-explain").removeClass('hidden')//css("height", "auto")
     })
     $(".client-explain:last-child").click(function () {
         $(".client-explain").removeClass("hidden")
         $(this).addClass("hidden")
         $(".our-clients-pre").css("margin-bottom", 100)
-        $("#clients-explain").css("height", 0)
+        $("#clients-explain").addClass('hidden')//css("height", 0)
     })
 
     // console slide
@@ -218,7 +218,14 @@ $(function () {
         var maxYvalue = $(document).height() - $(window).height();
         var percent = parseInt(ypos * 100 / maxYvalue);
         $('#scroll_value').text(percent + "%");
+
+        // for background color animation
+        // console.log(ypos);
+
+
+
     }
+
 
 
 });

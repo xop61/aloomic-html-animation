@@ -1,3 +1,23 @@
+.background-b2w {
+    background: white !important;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+}
+
+.background-w2b {
+    background: black !important;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+}
+
+.color-b2w {
+    color: #fcfcfc !important;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+}
+
+.color-w2b {
+    color: black !important;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+}
+
 header {
     background-color: #000;
     position: absolute;
@@ -36,7 +56,7 @@ header {
     min-height: calc(100vh - 93px);
     background-color: #000;
     z-index: 2;
-    transform: translateY(-100vh);
+    transform: translateY(-2000px);
     transition: transform 0.4s;
 }
 
@@ -108,7 +128,7 @@ header {
 
 /*  */
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .show {
@@ -240,8 +260,8 @@ header {
 
 .text-gradient {
     font-family: "Playfair Display", sans-serif;
-    background: linear-gradient(90.25deg, #fff 0%, #000 99.87%);
-    -webkit-background-clip: text;
+    background: linear-gradient(90.25deg, #fff 0%, #000 99.87%) !important;
+    -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
 }
 
@@ -293,14 +313,30 @@ header {
 
 .video-cards .cards-box .video-card {
     position: relative;
+    overflow: hidden;
+}
+
+.video-cards .cards-box .video-card:hover {
+    -webkit-clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+    clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+    transition-delay: 0s !important;
+    transition: all .5s cubic-bezier(.67, 0, .285, 1);
+}
+
+.video-cards .cards-box .video-card:hover img {
+    transform: translateZ(0) scale(1.1);
+}
+
+.video-cards .cards-box .video-card:hover .card-gradient {
+    background: transparent;
 }
 
 .video-cards .cards-box .video-card:first-child {
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 }
 
 .video-cards .cards-box .video-card:last-child {
-    padding-top: 24px;
+    /* padding-top: 24px; */
 }
 
 .video-cards .cards-box .video-card img {
@@ -308,6 +344,8 @@ header {
     object-fit: cover;
     z-index: 1;
     height: 380px;
+    transition: all 1s cubic-bezier(.67, 0, .285, 1), opacity 0s linear;
+
 }
 
 .video-card-text {
@@ -347,6 +385,7 @@ header {
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.78) 100%);
     z-index: 2;
+    transition: all 1s cubic-bezier(.67, 0, .285, 1), opacity 0s linear;
 }
 
 /* Our clietns */
@@ -407,7 +446,7 @@ header {
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #518f5a;
+    color: #518f5a !important;
 }
 
 .our-clients img {
@@ -415,22 +454,35 @@ header {
     height: 53px;
     object-fit: none;
     margin-bottom: 50px;
+
+}
+
+.our-clients.color-b2w img {
+    filter: contrast(0) brightness(10);
+}
+
+img {
+    /* filter: contrast(0) brightness(10); */
+}
+
+.background-w2b img {
+    /* filter: contrast(0) brightness(10); */
 }
 
 .our-clients-pre {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     margin-top: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #clients-explain {
-    height: 0;
+    /* height: 0; */
     margin-top: 0;
 }
 
-.client-explain:last-child {
+.client-explain {
     margin-bottom: 100px;
 }
 
@@ -1142,7 +1194,7 @@ body #mixedSlider .MS-controls .MS-right {
     /* identical to box height */
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: rgba(252, 252, 252, 0.38);
+    color: rgba(252, 252, 252, 0.38) !important;
     margin-top: 5px;
     top: 20px;
 }
