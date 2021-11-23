@@ -45,16 +45,18 @@ $(function () {
             // 
             $('.client-section').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
             $('.client-section *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');
-        } else if (ypos < 3400 && ypos > 2500) {
-            // $('.full-screen>div').removeClass('background-w2b').addClass('background-b2w');
-            // $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-w2b');
+            $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
+            $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');
+        } else if (ypos < 3600 && ypos > 2500) {
+            $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-b2w');
+            $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-w2b');
 
             $('.client-section').removeClass('background-w2b').removeClass('background-b2w').addClass('background-b2w');
             $('.client-section *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-w2b');
 
         } else {
-            // $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
-            // $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');
+            $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
+            $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');
 
             $('.client-section').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
             $('.client-section *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');

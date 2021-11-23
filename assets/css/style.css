@@ -319,13 +319,26 @@ header {
 
 .video-cards .cards-box .video-card:hover {
     transition-delay: 0s !important;
+    /* transition: all .5s cubic-bezier(.67, 0, .285, 1); */
+}
+
+.video-cards .cards-box .video-card .imgwrapper {
+
+    -webkit-clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    display: block;
+}
+
+.video-cards .cards-box .video-card:hover .imgwrapper {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+
     transition: all .5s cubic-bezier(.67, 0, .285, 1);
 }
 
 .video-cards .cards-box .video-card:hover img {
     transform: translateZ(0) scale(1.1);
-    -webkit-clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
-    clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
+    transition: all .5s cubic-bezier(.67, 0, .285, 1);
 }
 
 .video-cards .cards-box .video-card:hover .card-gradient {
@@ -2438,6 +2451,7 @@ a[href^="https://maps.google.com/maps"] {
     }
 
     .slide-cards-control {
+        display: none;
         margin-left: 445px;
     }
 
@@ -2601,6 +2615,9 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 @media (max-width: 767px) {
+    .mmmm {
+        padding-top: 0;
+    }
 
     /* for swiper slider */
     .slide-image-wrapper {

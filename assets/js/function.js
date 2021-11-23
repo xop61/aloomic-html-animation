@@ -396,11 +396,12 @@ function playPause() {
     }
 }
 // 
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 var mySwiper = new Swiper(".mySwiper", {
     direction: "horizontal",
     longSwipesMs: 4000,
-    slidesPerView: 1,
+    slidesPerView: (width >= 767) ? 1.5 : 1,
     followFinger: true,
     spaceBetween: 30,
     speed: 2000,
