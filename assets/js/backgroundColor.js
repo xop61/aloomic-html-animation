@@ -15,11 +15,6 @@ $(function () {
 
         var ypos = window.pageYOffset || document.documentElement.scrollTop;
         if (ypos < 2500) {
-            $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
-            $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');
-
-            $('.client-section').removeClass('background-w2b').removeClass('background-b2w').addClass('background-b2w');
-            $('.client-section *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-w2b');
 
             if (ypos >= 1030 && ypos <= 1630) {
                 $(".cards-box:first-child .video-card:first-child").css('transform', 'translate3d(' + (ypos - 1630) / 6 * 2 + '%, 0, 0) scale(' + (2230 - ypos) / 600 + ', ' + (2230 - ypos) / 600 + ')');

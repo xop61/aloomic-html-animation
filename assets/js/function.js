@@ -1,4 +1,12 @@
 $(function () {
+    // for swiper slider
+    $('.swiper-slide img').on('mouseenter', function () {
+        $(this).addClass('mover');
+    });
+    $('.swiper-slide img').on('mouseleave', function () {
+        $(this).removeClass('mover');
+    });
+    // 
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function (e) {
 
@@ -378,7 +386,6 @@ function initMap() {
 }
 
 function playPause() {
-    console.log('ss');
     var vid = document.getElementById("vid");
     if (vid.paused == true) {
         vid.play();
@@ -388,3 +395,34 @@ function playPause() {
         $('.play-button img').attr('src', './assets/img/play-icon.svg');
     }
 }
+// 
+
+var mySwiper = new Swiper(".mySwiper", {
+    direction: "horizontal",
+    longSwipesMs: 4000,
+    slidesPerView: 1,
+    followFinger: true,
+    spaceBetween: 30,
+    speed: 2000,
+    mousewheel: {
+        releaseOnEdges: true,
+    },
+    on: {
+        slideChangeTransitionStart: function () {
+
+        },
+        transitionStart: function () {
+            // Slide captions
+            var swiper = this;
+            var currentTitle = $(swiper.slides[swiper.activeIndex]).attr("data-title");
+            var currentSubtitle = $(swiper.slides[swiper.activeIndex]).attr("data-subtitle");
+            $(".slide-captions").html(function () {
+                return "<h2 class='current-title'>" + currentTitle + "</h2>" + "<h3 class='current-subtitle'>" + currentSubtitle + "</h3>";
+            });
+
+            gsap.from($(".swiper-slide-active .current-title"), 0.9, { duration: .8, startAt: { autoAlpha: 1 }, autoAlpha: 0, y: 120, ease: Power1.easeOut });
+            gsap.from($(".swiper-slide-active .current-subtitle"), 0.9, { startAt: { autoAlpha: 1 }, autoAlpha: 0, y: 80, delay: 0.15, ease: Power1.easeOut });
+        }
+    }
+
+});
