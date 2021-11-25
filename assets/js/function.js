@@ -404,7 +404,7 @@ var mySwiper = new Swiper(".mySwiper", {
     slidesPerView: (width >= 767) ? 1.5 : 1,
     followFinger: true,
     spaceBetween: 30,
-    speed: 2000,
+    speed: 1000,
     mousewheel: {
         releaseOnEdges: true,
     },

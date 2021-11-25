@@ -327,6 +327,8 @@ header {
     -webkit-clip-path: polygon(5% 10%, 95% 0, 95% 90%, 5% 95%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     display: block;
+    width: 100%;
+    height: 595px;
 }
 
 .video-cards .cards-box .video-card:hover .imgwrapper {
@@ -337,7 +339,7 @@ header {
 }
 
 .video-cards .cards-box .video-card:hover img {
-    transform: translateZ(0) scale(1.1);
+    transform: translateZ(0) scale(1.2);
     transition: all .5s cubic-bezier(.67, 0, .285, 1);
 }
 
@@ -345,7 +347,7 @@ header {
     background: transparent;
 }
 
-.video-cards .cards-box .video-card:first-child {
+.video-cards .cards-box .video-card {
     margin-bottom: 48px;
 }
 
@@ -355,9 +357,9 @@ header {
 
 .video-cards .cards-box .video-card img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: 1;
-    height: 380px;
     transition: all 1s cubic-bezier(.67, 0, .285, 1), opacity 0s linear;
 
 }
@@ -399,7 +401,7 @@ header {
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.78) 100%);
     z-index: 2;
-    transition: all 1s cubic-bezier(.67, 0, .285, 1), opacity 0s linear;
+    transition: all .5s cubic-bezier(.67, 0, .285, 1), opacity 0s linear;
 }
 
 /* Our clietns */
@@ -596,7 +598,7 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    margin-left: 700px;
+    margin-left: 50%;
     margin-top: 57px;
     z-index: 2;
 }
@@ -919,6 +921,7 @@ button.control_next {
 body {
     font-family: 'Open Sans';
     background-color: #fafafa;
+    scroll-behavior: smooth;
 }
 
 body .titleandcontentitem {
@@ -1108,6 +1111,7 @@ body #mixedSlider .MS-controls .MS-right {
 .input-panel {
     background-color: #000;
     padding-bottom: 190px;
+    position: relative;
 }
 
 .input-panel h1:first-child span img {
@@ -2339,9 +2343,37 @@ a[href^="https://maps.google.com/maps"] {
     transition: all .5s cubic-bezier(.67, 0, .285, 1);
 }
 
+/* stick-with */
+.fa {
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+
+}
+
+.stick-note {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-family: "Epilogue";
+    bottom: 60px;
+}
+
+.fa-heart {
+    content: "\f004";
+}
+
+.v-text {
+    transform: rotate(-90deg);
+}
+
 /* --------------------- */
 
 @media (max-width: 1080px) {
+    .video-cards .cards-box .video-card .imgwrapper {
+        height: auto;
+    }
+
     /* for swiper slide */
 
     .swiper-slide img {
@@ -2615,6 +2647,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 @media (max-width: 767px) {
+
     .mmmm {
         padding-top: 0;
     }
@@ -2915,6 +2948,10 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 @media (max-width: 460px) {
+    .we-love .container p {
+        padding: 20px;
+        margin: auto;
+    }
 
     /* for swiper slide */
     .slide-text-wrapper h2 {
