@@ -23,7 +23,7 @@ $(function () {
         $('#scroll_value').text(percent + "%");
 
 
-        if (ypos < 2500) {
+        if (ypos < 3500) {
 
             if (width >= 1080) {
                 if (ypos >= 1030 && ypos <= 1630) {
@@ -51,7 +51,7 @@ $(function () {
             $('.client-section *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');
             $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-w2b');
             $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-b2w');
-        } else if (ypos < 3600 && ypos > 2500) {
+        } else if (ypos < 4800 && ypos > 3500) {
             $('.full-screen>div').removeClass('background-w2b').removeClass('background-b2w').addClass('background-b2w');
             $('.full-screen>div *').removeClass('color-b2w').removeClass('color-w2b').addClass('color-w2b');
 
@@ -69,7 +69,7 @@ $(function () {
 });
 
 $('.mySwiper').bind('mousewheel', function (e) {
-    console.log('qq');
+
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
     var activeslide = $('.swiper-slide-active').index();
